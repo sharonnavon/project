@@ -1,14 +1,12 @@
 #!/bin/bash
 
+# Install Grafana
 sudo sed -i 's/us-east-1.ec2.//g' /etc/apt/sources.list
 echo "deb https://packages.grafana.com/oss/deb stable main" > /etc/apt/sources.list.d/grafana.list
 curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 sudo apt -qq update
 sudo apt install -y grafana
 sudo systemctl enable grafana-server.service
-#wget https://dl.grafana.com/oss/release/grafana_5.4.2_amd64.deb
-#sudo apt-get install -y adduser libfontconfig
-#sudo dpkg -i grafana_5.4.2_amd64.deb
 
 sudo sed -i 's/;admin_user = admin/admin_user = admin/g' /etc/grafana/grafana.ini
 sudo sed -i 's/;admin_password = admin/admin_password = admin/g' /etc/grafana/grafana.ini
@@ -190,3 +188,22 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.j
 EOF
 
 sudo systemctl restart grafana-server
+
+# Register Grafana in consul
+cat << EOF | sudo tee  /etc/consul.d/grafana-3000.json
+{
+  "service": {
+    "name": "grafana-3000",
+    "id": "grafana-3000",
+    "port": 3000,
+    "check": {
+      "name": "Port 3000 http check",
+      "interval": "5s",
+      "http": "http://localhost:3000"
+    }
+  }
+}
+
+EOF
+
+sudo systemctl reload consul

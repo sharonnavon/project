@@ -16,10 +16,10 @@ variable "network_address" {
 variable "subnet1_address" {
   default = "10.0.1.0/24"
 }
-variable "ami" {
+variable "ami_ubuntu18" {
   default = "ami-0ac019f4fcb7cb7e6"
 }
-variable "ami_ubuntu16" {
+variable "ami" {
   default = "ami-0f9cf087c1f27d9b1"
 }
 

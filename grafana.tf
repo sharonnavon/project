@@ -22,12 +22,12 @@ data "template_cloudinit_config" "grafana_config" {
 
 resource "aws_instance" "grafana" {
   associate_public_ip_address = true
-  private_ip = "10.0.1.12"
   ami = "${var.ami}"
   instance_type = "t2.micro"
   subnet_id = "${aws_subnet.public_subnet1.id}"
   vpc_security_group_ids = ["${aws_security_group.sg_default.id}", "${aws_security_group.sg_consul.id}"]
   key_name = "${var.key_name}"
+  iam_instance_profile   = "${aws_iam_instance_profile.consul_auto_join.name}"
   tags {
     Name = "grafana"
   }

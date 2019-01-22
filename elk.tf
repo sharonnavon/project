@@ -1,5 +1,3 @@
-
-//### ELK ###
 //resource "aws_instance" "elk" {
 //  associate_public_ip_address = true
 //  private_ip = "10.0.1.13"

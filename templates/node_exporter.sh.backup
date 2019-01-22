@@ -9,7 +9,7 @@ sudo git clone https://github.com/ops-school/session-monitoring.git /opt/my_dumm
 nohup python /opt/my_dummy_exporter/training_session/my_dummy_exporter.py &
 
 # Register the app in consul
-cat > /etc/consul.d/python-65433.json << EOF
+cat << EOF | sudo tee  /etc/consul.d/python-65433.json
 {
   "service": {
     "name": "python-65433",
