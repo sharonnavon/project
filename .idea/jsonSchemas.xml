@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="ansible-stable-2.5">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="ansible-stable-2.5" />
+              <option name="relativePathToSchema" value="http://json.schemastore.org/ansible-stable-2.5" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="test" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="file://$PROJECT_DIR$/../ansible/configure_base_server.yml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

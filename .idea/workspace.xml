@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/instances.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_exporter.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grafana.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consul.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prometheus.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/node_exporter.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/grafana.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="43" column="50" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ansible/inventory">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/prometheus.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>aws_subnet.public_subnet</find>
+      <find>&quot;ubuntu&quot;</find>
+      <find>conf_files</find>
+      <find>instance_username</find>
+      <find>user = &quot;ubuntu&quot;</find>
+      <find>ami = &quot;ami-0ac019f4fcb7cb7e6&quot;</find>
+      <find>&quot;sudo apt update&quot;</find>
+      <find>ami</find>
+      <find>${var.ami}</find>
+      <find>${var.ami_ubuntu18}</find>
+      <find>opsschool_consul</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;${var.instance_username}&quot;</replace>
+      <replace>files</replace>
+      <replace>user = &quot;${var.instance_username}&quot;</replace>
+      <replace>ami = &quot;${var.ami}&quot;</replace>
+      <replace>&quot;sudo apt -qq update&quot;</replace>
+      <replace>${var.ami_ubuntu18}</replace>
+      <replace>${var.ami}</replace>
+      <replace>sg_consul</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ansible" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sn.tf" />
+        <option value="$PROJECT_DIR$/terraform.tfvars.backup" />
+        <option value="$PROJECT_DIR$/terraform.tfvars" />
+        <option value="$PROJECT_DIR$/providers.tf.backup" />
+        <option value="$PROJECT_DIR$/providers.tf" />
+        <option value="$PROJECT_DIR$/test/variables.tf" />
+        <option value="$PROJECT_DIR$/test/module1.tf" />
+        <option value="$PROJECT_DIR$/ansible/variables.tf" />
+        <option value="$PROJECT_DIR$/ansible/ansible.tf" />
+        <option value="$PROJECT_DIR$/test.yml" />
+        <option value="$PROJECT_DIR$/test" />
+        <option value="$PROJECT_DIR$/../ansible/configure_base_server.yml" />
+        <option value="$PROJECT_DIR$/../ansible/webserver_setup.yml" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/db_setup.yml" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/configure_base_server.yml" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/haproxy.cfg" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/haproxy_setup.yml" />
+        <option value="$PROJECT_DIR$/sg.tf" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/ansible_inventory" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/index.html" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/webserver_setup.yml" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/ssh_config" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/ansible_hosts" />
+        <option value="$PROJECT_DIR$/../git_root/ansible/webserver_setup_git.yml" />
+        <option value="$PROJECT_DIR$/ec2.tf" />
+        <option value="$PROJECT_DIR$/session3/module_nginx.tf" />
+        <option value="$PROJECT_DIR$/session3/variables.tf" />
+        <option value="$USER_HOME$/terraform/ec2.tf" />
+        <option value="$PROJECT_DIR$/files/ansible_hosts" />
+        <option value="$PROJECT_DIR$/files/inventory" />
+        <option value="$PROJECT_DIR$/variables.tf" />
+        <option value="$PROJECT_DIR$/main.yml" />
+        <option value="$PROJECT_DIR$/vpc.tf" />
+        <option value="$PROJECT_DIR$/network.tf" />
+        <option value="$PROJECT_DIR$/iam_roles.tf" />
+        <option value="$PROJECT_DIR$/security_groups.tf" />
+        <option value="$PROJECT_DIR$/module_project.tf" />
+        <option value="$PROJECT_DIR$/ansible.tf" />
+        <option value="$PROJECT_DIR$/templates/global.sh" />
+        <option value="$PROJECT_DIR$/templates/ansible.sh" />
+        <option value="$PROJECT_DIR$/files/prometheus.yml" />
+        <option value="$PROJECT_DIR$/instances.tf" />
+        <option value="$PROJECT_DIR$/prometheus.tf" />
+        <option value="$PROJECT_DIR$/grafana.tf" />
+        <option value="$PROJECT_DIR$/node_exporter.tf" />
+        <option value="$PROJECT_DIR$/templates/grafana.sh" />
+        <option value="$PROJECT_DIR$/consul.tf" />
+        <option value="$PROJECT_DIR$/templates/prometheus.sh" />
+        <option value="$PROJECT_DIR$/templates/node_exporter.sh" />
+        <option value="$PROJECT_DIR$/output.tf" />
+        <option value="$PROJECT_DIR$/../ansible/inventory" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="573" />
+    <option name="height" value="453" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="TF_FMT" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ansible" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../git_root/ansible" />
+      <recent name="$PROJECT_DIR$/session3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ansible" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="" />
+      <created>1544543072080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544543072080</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding HAProxy setup">
+      <created>1546507169213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546507169213</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding HAProxy setup">
+      <created>1546508556030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546508556030</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adding HAProxy setup">
+      <created>1546518192030</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546518192030</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding HAProxy setup">
+      <created>1546518492964</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546518492964</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding HAProxy setup">
+      <created>1546523881314</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546523881314</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding HAProxy setup">
+      <created>1546524001176</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546524001176</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding HAProxy setup">
+      <created>1546866472430</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546866472430</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding HAProxy setup">
+      <created>1546873998722</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546873998722</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding HAProxy setup">
+      <created>1546874063496</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546874063496</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding HAProxy setup">
+      <created>1546875522868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1546875522868</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Adding HAProxy setup">
+      <created>1546875769587</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1546875769587</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adding HAProxy setup">
+      <created>1546876649575</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1546876649575</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adding HAProxy setup">
+      <created>1546876752635</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1546876752635</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Adding HAProxy setup">
+      <created>1546877554621</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1546877554621</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adding HAProxy setup">
+      <created>1546963003443</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1546963003443</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adding HAProxy setup">
+      <created>1546963024756</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1546963024756</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding HAProxy setup">
+      <created>1547043232212</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1547043232213</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding HAProxy setup">
+      <created>1547043478060</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1547043478060</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding HAProxy setup">
+      <created>1547136696634</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1547136696639</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Preparing mid project">
+      <created>1547136791175</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1547136791175</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Preparing mid project">
+      <created>1547136821879</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1547136821879</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Preparing mid project">
+      <created>1547137297569</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547137297569</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Preparing mid project">
+      <created>1547369041726</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547369041727</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Preparing mid project">
+      <created>1547369117320</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1547369117320</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Preparing mid project">
+      <created>1547383558466</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1547383558466</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Preparing mid project">
+      <created>1547384871340</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1547384871340</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Preparing mid project">
+      <created>1547385387626</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1547385387626</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Preparing mid project">
+      <created>1547385854117</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1547385854117</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Preparing mid project">
+      <created>1547387057904</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547387057904</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Preparing mid project">
+      <created>1547394201940</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1547394201940</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Preparing mid project">
+      <created>1547394268839</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1547394268839</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Preparing mid project">
+      <created>1547399422289</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1547399422289</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Preparing mid project">
+      <created>1547455784327</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1547455784328</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Preparing mid project">
+      <created>1547461179045</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1547461179045</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Preparing mid project">
+      <created>1547467523154</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1547467523154</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Preparing mid project">
+      <created>1547469858318</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1547469858318</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Preparing mid project">
+      <created>1547470564781</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1547470564781</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Preparing mid project">
+      <created>1547475239053</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1547475239053</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Preparing mid project">
+      <created>1547569710359</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1547569710359</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Preparing mid project">
+      <created>1547628718038</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1547628718038</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Preparing mid project">
+      <created>1547629599573</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1547629599573</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Preparing mid project">
+      <created>1547639841369</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1547639841369</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Preparing mid project">
+      <created>1547643763692</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1547643763692</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Preparing mid project">
+      <created>1547643826471</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1547643826471</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Preparing mid project">
+      <created>1547980737858</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1547980737858</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Preparing mid project">
+      <created>1547986938452</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1547986938452</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Preparing mid project">
+      <created>1548085821436</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1548085821436</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Preparing mid project">
+      <created>1548143416412</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1548143416413</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Preparing mid project">
+      <created>1548143448110</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1548143448110</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="45" y="27" width="1635" height="928" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14578164" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18188855" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3156863" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../git_root/ansible" />
+    </ignored-roots>
+    <MESSAGE value="Added db_setup.yml" />
+    <MESSAGE value="Adding HAProxy setup" />
+    <MESSAGE value="Preparing mid project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing mid project" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test.yml" />
+    <entry file="file://$PROJECT_DIR$/test" />
+    <entry file="file://$PROJECT_DIR$/../ansible/configure_base_server.yml" />
+    <entry file="file://$PROJECT_DIR$/sn.tf" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/db_setup.yml" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/configure_base_server.yml" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/conf_files/haproxy.cfg" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/inventory" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/conf_files/index.html" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/haproxy_setup.yml" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/conf_files/ssh_config" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/conf_files/ansible_hosts" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/webserver_setup.yml" />
+    <entry file="file://$PROJECT_DIR$/../git_root/ansible/webserver_setup_git_key.yml" />
+    <entry file="file://$PROJECT_DIR$/sg.tf" />
+    <entry file="file://$PROJECT_DIR$/providers.tf" />
+    <entry file="file://$PROJECT_DIR$/ec2.tf" />
+    <entry file="file://$PROJECT_DIR$/session3/module_nginx.tf" />
+    <entry file="file://$PROJECT_DIR$/session3/variables.tf" />
+    <entry file="file://$USER_HOME$/terraform/sg.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/index.html" />
+    <entry file="file://$PROJECT_DIR$/../ansible/webserver_setup_git_key.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/terraform/ec2.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#712#727#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/inventory">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/policies/assume-role.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/policies/describe-instances.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iam_roles.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpc.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible/webserver_setup.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ansible.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/consul.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/prometheus.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/global.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.terraform.tfstate.lock.info">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grafana.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform.tfstate">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_exporter.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_groups.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="n#!!block;n#sg_consul#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prometheus.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instances.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consul.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/prometheus.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/grafana.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/node_exporter.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ansible/inventory">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
