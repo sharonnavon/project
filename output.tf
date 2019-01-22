@@ -6,7 +6,6 @@
 //  value = ["${aws_instance.consul_client.*.public_ip}"]
 //}
 //
-//
 
 output "Consul" {
   value = "http://${aws_instance.consul_server.*.public_ip[0]}:8500"
