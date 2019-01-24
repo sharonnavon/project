@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/dummy_app.sh" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dummy_app.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dummy_app.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -140,8 +141,8 @@
         <option value="$PROJECT_DIR$/grafana.tf" />
         <option value="$PROJECT_DIR$/templates/prometheus.sh" />
         <option value="$PROJECT_DIR$/templates/1.py" />
-        <option value="$PROJECT_DIR$/templates/Dockerfile" />
         <option value="$PROJECT_DIR$/templates/dummy_app.sh" />
+        <option value="$PROJECT_DIR$/templates/Dockerfile" />
       </list>
     </option>
   </component>
@@ -219,20 +220,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding HAProxy setup">
-      <created>1546874063496</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1546874063496</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding HAProxy setup">
-      <created>1546875522868</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1546875522868</updated>
     </task>
     <task id="LOCAL-00013" summary="Adding HAProxy setup">
       <created>1546875769587</created>
@@ -563,7 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548338508406</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Preparing mid project">
+      <created>1548339373215</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1548339373216</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Preparing mid project">
+      <created>1548341267058</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1548341267059</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -814,15 +815,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dummy_app.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

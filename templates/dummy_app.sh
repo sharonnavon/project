@@ -13,5 +13,4 @@ cd /opt/docker
 sudo wget https://raw.githubusercontent.com/sharonnavon/project/master/templates/Dockerfile
 sudo wget -O /opt/docker/my_dummy_exporter.py https://raw.githubusercontent.com/sharonnavon/project/master/templates/my_dummy_exporter.py
 sudo docker build -t dummyapp .
-#sudo docker run --name=dummyapp1 -d -p 65433:65433 dummyapp
 sudo docker run --name=dummyapp1 -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py -d -p 65433:65433 dummyapp
