@@ -11,5 +11,5 @@ sudo apt install -yqq apt-transport-https ca-certificates curl gnupg2 software-p
 sudo mkdir /opt/docker
 cd /opt/docker
 sudo wget https://raw.githubusercontent.com/sharonnavon/project/master/templates/Dockerfile
-sudo sudo docker build -t dummyapp .
+sudo docker build -t dummyapp .
 sudo docker run --name=dummyapp1 -d -p 65433:65433 dummyapp
