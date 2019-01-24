@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/dummy_app.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul.tf" beforeDir="false" afterPath="$PROJECT_DIR$/consul.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana.tf" beforeDir="false" afterPath="$PROJECT_DIR$/grafana.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instances.tf" beforeDir="false" afterPath="$PROJECT_DIR$/elk.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_exporter.tf" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_app.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus.tf" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/grafana.sh" beforeDir="false" afterPath="$PROJECT_DIR$/templates/grafana.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/node_exporter.sh" beforeDir="false" afterPath="$PROJECT_DIR$/templates/node_exporter.sh.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dummy_app.sh" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dummy_app.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/variables.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,35 +19,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dummy_app.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/grafana.sh">
+        <entry file="file://$PROJECT_DIR$/templates/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grafana.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dummy_app.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -62,8 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/node_exporter.sh.backup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/consul.sh.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -101,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/providers.tf" />
         <option value="$PROJECT_DIR$/test/variables.tf" />
         <option value="$PROJECT_DIR$/test/module1.tf" />
         <option value="$PROJECT_DIR$/ansible/variables.tf" />
@@ -139,19 +122,20 @@
         <option value="$PROJECT_DIR$/files/prometheus.yml" />
         <option value="$PROJECT_DIR$/instances.tf" />
         <option value="$PROJECT_DIR$/node_exporter.tf" />
-        <option value="$PROJECT_DIR$/templates/prometheus.sh" />
         <option value="$PROJECT_DIR$/../ansible/inventory" />
         <option value="$PROJECT_DIR$/output.tf" />
         <option value="$PROJECT_DIR$/elk.tf" />
         <option value="$PROJECT_DIR$/templates/node_exporter.sh" />
         <option value="$PROJECT_DIR$/dummy_app.sh" />
-        <option value="$PROJECT_DIR$/templates/dummy_app.sh" />
         <option value="$PROJECT_DIR$/variables.tf" />
         <option value="$PROJECT_DIR$/consul.tf" />
         <option value="$PROJECT_DIR$/prometheus.tf" />
         <option value="$PROJECT_DIR$/dummy_app.tf" />
         <option value="$PROJECT_DIR$/templates/grafana.sh" />
         <option value="$PROJECT_DIR$/grafana.tf" />
+        <option value="$PROJECT_DIR$/templates/prometheus.sh" />
+        <option value="$PROJECT_DIR$/templates/dummy_app.sh" />
+        <option value="$PROJECT_DIR$/templates/Dockerfile" />
       </list>
     </option>
   </component>
@@ -229,20 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Adding HAProxy setup">
-      <created>1546518492964</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1546518492964</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Adding HAProxy setup">
-      <created>1546523881314</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1546523881314</updated>
     </task>
     <task id="LOCAL-00008" summary="Adding HAProxy setup">
       <created>1546524001176</created>
@@ -573,16 +543,31 @@
       <option name="project" value="LOCAL" />
       <updated>1548161245126</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Preparing mid project">
+      <created>1548169145055</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1548169145056</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Preparing mid project">
+      <created>1548172129032</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1548172129032</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14578164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14578164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -591,7 +576,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4229798" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17171717" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -631,7 +616,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Preparing mid project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test" />
     <entry file="file://$PROJECT_DIR$/../ansible/configure_base_server.yml" />
     <entry file="file://$PROJECT_DIR$/sn.tf" />
     <entry file="file://$PROJECT_DIR$/../git_root/ansible/db_setup.yml" />
@@ -674,20 +658,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/inventory">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/files/hosts" />
+    <entry file="file://$PROJECT_DIR$/files/inventory" />
     <entry file="file://$PROJECT_DIR$/templates/policies/assume-role.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -708,44 +680,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ansible.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/prometheus.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/global.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.terraform.tfstate.lock.info">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ansible.sh" />
+    <entry file="file://$PROJECT_DIR$/ansible.tf" />
+    <entry file="file://$PROJECT_DIR$/main.yml" />
+    <entry file="file://$PROJECT_DIR$/files/prometheus.yml" />
+    <entry file="file://$PROJECT_DIR$/templates/global.sh" />
+    <entry file="file://$PROJECT_DIR$/.terraform.tfstate.lock.info" />
     <entry file="file://$PROJECT_DIR$/network.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -777,13 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/prometheus.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -822,24 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/consul.sh.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/grafana.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/node_exporter.sh.backup">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dummy_app.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="400">
+          <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
         </state>
       </provider>
     </entry>
@@ -850,17 +769,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/grafana.sh">
+    <entry file="file://$PROJECT_DIR$/dummy_app.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="165">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/prometheus.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/node_exporter.sh.backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/consul.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/dummy_app.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
