@@ -16,7 +16,7 @@ sudo docker build -t dummyapp .
 sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py -d -p 65433:65433 dummyapp
 
 # Register the dummy app in consul
-at << EOF | sudo tee  /etc/consul.d/prometheus-9090.json
+cat << EOF | sudo tee  /etc/consul.d/dummy-65433.json
 {
   "service": {
     "name": "dummy-65433",
@@ -33,4 +33,3 @@ at << EOF | sudo tee  /etc/consul.d/prometheus-9090.json
 EOF
 
 sudo systemctl reload consul
-

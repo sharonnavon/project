@@ -32,7 +32,7 @@ variable "consul_servers" {
   description = "The number of consul servers"
   default = 3
 }
-variable "consul_clients" {
+variable "docker_servers" {
   description = "The number of consul client instances"
-  default = 1
+  default = 2
 }
