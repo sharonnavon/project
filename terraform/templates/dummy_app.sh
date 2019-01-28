@@ -12,8 +12,25 @@ sudo mkdir /opt/docker
 cd /opt/docker
 sudo wget https://raw.githubusercontent.com/sharonnavon/project/master/terraform/templates/Dockerfile
 sudo wget -O /opt/docker/my_dummy_exporter.py https://raw.githubusercontent.com/sharonnavon/project/master/terraform/templates/my_dummy_exporter.py
-sudo wget -O /opt/docker/consul_dummy1.sh https://raw.githubusercontent.com/sharonnavon/project/master/terraform/templates/consul_dummy1.sh
 sudo docker build -t dummyapp .
-sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py \
-                                -v /opt/docker/consul_dummy1.sh:/tmp/consul_dummy1.sh \
-                                -d -p 65433:65433 dummyapp
+sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py -d -p 65433:65433 dummyapp
+
+# Register the dummy app in consul
+at << EOF | sudo tee  /etc/consul.d/prometheus-9090.json
+{
+  "service": {
+    "name": "dummy-65433",
+    "id": "dummy-65433",
+    "port": 65433,
+    "check": {
+      "name": "Port 65433 http check",
+      "interval": "5s",
+      "http": "http://localhost:65433"
+    }
+  }
+}
+
+EOF
+
+sudo systemctl reload consul
+
