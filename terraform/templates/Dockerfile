@@ -1,7 +1,5 @@
-FROM 1and1internet/ubuntu-16
+FROM ubuntu
 RUN apt-get -qq update
 RUN apt-get install -yqq python
 WORKDIR /tmp
 CMD python my_dummy_exporter.py
-CMD chmod 700 consul_dummy1.sh
-CMD /bin/bash ./consul_dummy1.sh
