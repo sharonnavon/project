@@ -1,4 +1,4 @@
-data "template_file" "docker_server" {
+data "template_file" "consul_client_docker" {
   count    = "${var.docker_servers}"
   template = "${file("${path.module}/templates/consul.sh.tpl")}"
 
@@ -14,7 +14,7 @@ data "template_file" "docker_server" {
 
 data "template_cloudinit_config" "docker_server_config" {
   part {
-    content = "${data.template_file.docker_server.rendered}"
+    content = "${data.template_file.consul_client_docker.rendered}"
   }
   part {
     content = "${file("${path.module}/templates/docker.sh")}"
@@ -32,6 +32,7 @@ resource "aws_instance" "docker_server" {
   tags {
     Name = "docker-server${count.index+1}"
   }
-  user_data = "${data.template_cloudinit_config.docker_server_config.rendered}"
+  user_data = "${element(data.template_cloudinit_config.docker_server_config.*.rendered, count.index)}"
+  #user_data = "${data.template_cloudinit_config.docker_server_config.rendered}"
   depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
 }
