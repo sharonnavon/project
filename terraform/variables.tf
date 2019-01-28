@@ -22,8 +22,10 @@ variable "ami_ubuntu18" {
 variable "ami" {
   default = "ami-0f9cf087c1f27d9b1"
 }
-
-### Consul ###
+variable "docker_servers" {
+  description = "The number of docker server instances"
+  default = 2
+}
 variable "consul_version" {
   description = "The version of Consul to install (server and client)"
   default     = "1.4.0"
@@ -31,8 +33,4 @@ variable "consul_version" {
 variable "consul_servers" {
   description = "The number of consul servers"
   default = 3
-}
-variable "docker_servers" {
-  description = "The number of consul client instances"
-  default = 2
 }
