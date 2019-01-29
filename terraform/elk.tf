@@ -1,26 +1,44 @@
-//resource "aws_instance" "elk" {
-//  associate_public_ip_address = true
-//  private_ip = "10.0.1.13"
-//  ami = "${var.ami}"
-//  instance_type = "t2.micro"
-//  subnet_id = "${aws_subnet.public_subnet1.id}"
-//  vpc_security_group_ids = ["${aws_security_group.sg_default.id}"]
-//  key_name = "${var.key_name}"
-//  tags {
-//    Name = "elk"
+data "template_file" "consul_client_elk" {
+  template = "${file("${path.module}/templates/consul.sh.tpl")}"
+
+  vars {
+    consul_version = "${var.consul_version}"
+    config = <<EOF
+     "node_name": "elk",
+     "enable_script_checks": true,
+     "server": false
+    EOF
+  }
+}
+
+data "template_file" "elk_install" {
+  template = "${file("${path.module}/templates/elk.sh.tpl")}"
+
+//  vars {
+//    prom_priv_ip = "${aws_instance.prometheus.private_ip}"
 //  }
-//
-//  connection {
-//    user = "${var.instance_username}"
-//    private_key = "${file(var.private_key_path)}"
-//  }
-//
-//  provisioner "remote-exec" {
-//    inline = [
-//      "sudo sed -i 's/us-east-1.ec2.//g' /etc/apt/sources.list",
-//      "sudo apt -qq update",
-//      "sudo apt install -y python"
-//    ]
-//  }
-//}
-//
+}
+
+data "template_cloudinit_config" "elk_config" {
+  part {
+    content = "${data.template_file.consul_client_elk.rendered}"
+  }
+  part {
+    content = "${data.template_file.elk_install.rendered}"
+  }
+}
+
+resource "aws_instance" "elk" {
+  associate_public_ip_address = true
+  ami = "${var.ami}"
+  instance_type = "t3.medium"
+  subnet_id = "${aws_subnet.public_subnet1.id}"
+  vpc_security_group_ids = ["${aws_security_group.sg_default.id}", "${aws_security_group.sg_consul.id}"]
+  key_name = "${var.key_name}"
+  iam_instance_profile   = "${aws_iam_instance_profile.consul_auto_join.name}"
+  tags {
+    Name = "grafana"
+  }
+  user_data = "${data.template_cloudinit_config.elk_config.rendered}"
+//  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
+}

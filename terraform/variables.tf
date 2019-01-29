@@ -24,7 +24,7 @@ variable "ami" {
 }
 variable "docker_servers" {
   description = "The number of docker server instances"
-  default = 2
+  default = 1
 }
 variable "consul_version" {
   description = "The version of Consul to install (server and client)"
