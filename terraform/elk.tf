@@ -40,6 +40,5 @@ resource "aws_instance" "elk" {
     Name = "grafana"
   }
   user_data = "${data.template_cloudinit_config.elk_config.rendered}"
-//  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
+  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
 }
-//
