@@ -37,7 +37,7 @@ resource "aws_instance" "elk" {
   key_name = "${var.key_name}"
   iam_instance_profile   = "${aws_iam_instance_profile.consul_auto_join.name}"
   tags {
-    Name = "grafana"
+    Name = "elk"
   }
   user_data = "${data.template_cloudinit_config.elk_config.rendered}"
   depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
