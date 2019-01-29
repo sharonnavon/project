@@ -51,7 +51,21 @@ resource "aws_security_group" "sg_default" {
         cidr_blocks     = ["0.0.0.0/0"]
     }
 
-      ingress {
+    ingress {
+        from_port       = 5601
+        to_port         = 5601
+        protocol        = "tcp"
+        cidr_blocks     = ["0.0.0.0/0"]
+    }
+
+    ingress {
+        from_port       = 9200
+        to_port         = 9200
+        protocol        = "tcp"
+        cidr_blocks     = ["0.0.0.0/0"]
+    }
+
+    ingress {
         from_port       = 65433
         to_port         = 65433
         protocol        = "tcp"

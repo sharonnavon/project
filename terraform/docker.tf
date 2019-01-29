@@ -35,5 +35,5 @@ resource "aws_instance" "docker_server" {
     Name = "docker-server${count.index+1}"
   }
   user_data = "${element(data.template_cloudinit_config.docker_server_config.*.rendered, count.index)}"
-  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
+//  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
 }
