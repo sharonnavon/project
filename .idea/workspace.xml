@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/terraform/templates/elk.sh.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/consul.tf" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore/consul.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/elk.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/elk.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/grafana.tf" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore/grafana.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/prometheus.tf" beforeDir="false" afterPath="$PROJECT_DIR$/.ignore/prometheus.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/templates/node_exporter.sh.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/variables.tf" afterDir="false" />
-    </list>
+    <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../git_root/ansible/webserver_setup.yml" />
         <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/ssh_config" />
         <option value="$PROJECT_DIR$/../git_root/ansible/conf_files/ansible_hosts" />
         <option value="$PROJECT_DIR$/../git_root/ansible/webserver_setup_git.yml" />
@@ -130,6 +118,7 @@
         <option value="$PROJECT_DIR$/terraform/variables.tf" />
         <option value="$PROJECT_DIR$/terraform/templates/elk.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/elk.tf" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -156,6 +145,27 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="terraform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+              <item name=".terraform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+              <item name=".terraform" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+              <item name=".terraform" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="linux_amd64" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
@@ -213,20 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Preparing mid project">
-      <created>1547369041726</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1547369041727</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Preparing mid project">
-      <created>1547369117320</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1547369117320</updated>
     </task>
     <task id="LOCAL-00027" summary="Preparing mid project">
       <created>1547383558466</created>
@@ -557,11 +553,26 @@
       <option name="project" value="LOCAL" />
       <updated>1548692355029</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Preparing mid project">
+      <created>1548756926347</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1548756926347</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Preparing mid project">
+      <created>1548757063852</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1548757063852</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15818858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -615,13 +626,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Preparing mid project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/terraform/sg.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/index.html" />
     <entry file="file://$PROJECT_DIR$/../ansible/webserver_setup_git_key.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -901,6 +905,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
