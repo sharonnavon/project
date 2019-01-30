@@ -1,18 +1,28 @@
 #!/bin/bash
 
-# Install ElasticSearch
+# Install ELK
 sudo sed -i 's/us-east-1.ec2.//g' /etc/apt/sources.list
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
 sudo apt-get -qq update
-sudo apt-get install -yqq openjdk-8-jre-headless openjdk-8-jdk-headless
-sudo apt-get install -yqq elasticsearch logstash kibana
+sudo apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless
+sudo apt-get install -y elasticsearch logstash kibana
 sudo systemctl enable elasticsearch logstash kibana
 sudo systemctl start elasticsearch logstash kibana
 
+# Configure Kibana
+cat << EOF | sudo tee --append /etc/kibana/kibana.yml
+
+server.name: kibana
+server.host: "0.0.0.0"
+elasticsearch.url: "http://localhost:9200"
+
+EOF
+
+sudo systemctl restart kibana
 
 # Register in consul
-cat << EOF | sudo tee  /etc/consul.d/elasticsearch-9200.json
+cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
 {
   "service": {
     "name": "elasticsearch-9200",
@@ -21,14 +31,14 @@ cat << EOF | sudo tee  /etc/consul.d/elasticsearch-9200.json
     "check": {
       "name": "Port 9200 http check",
       "interval": "5s",
-      "http": "http://localhost:9200"
+      "http": "http://localhost:9200/_cluster/health?pretty=true"
     }
   }
 }
 
 EOF
 
-cat << EOF | sudo tee  /etc/consul.d/kibana-5601.json
+cat << EOF | sudo tee /etc/consul.d/kibana-5601.json
 {
   "service": {
     "name": "kibana-5601",
