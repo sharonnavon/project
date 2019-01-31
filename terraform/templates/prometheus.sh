@@ -22,7 +22,7 @@ cat << EOF | sudo tee  /etc/consul.d/prometheus-9090.json
     "id": "prometheus-9090",
     "port": 9090,
     "check": {
-      "name": "Port 9090 http check",
+      "name": "prometheus port 9090 http check",
       "interval": "5s",
       "http": "http://localhost:9090"
     }

@@ -25,7 +25,7 @@ cat << EOF | sudo tee /etc/consul.d/dummy-65433.json
     "id": "dummy-65433",
     "port": 65433,
     "check": {
-      "name": "Port 65433 http check",
+      "name": "dummy_app port 65433 http check",
       "interval": "5s",
       "http": "http://localhost:65433"
     }

@@ -197,7 +197,7 @@ cat << EOF | sudo tee  /etc/consul.d/grafana-3000.json
     "id": "grafana-3000",
     "port": 3000,
     "check": {
-      "name": "Port 3000 http check",
+      "name": "grafana port 3000 http check",
       "interval": "5s",
       "http": "http://localhost:3000"
     }

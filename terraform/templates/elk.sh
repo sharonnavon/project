@@ -57,7 +57,7 @@ cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
     "id": "elasticsearch-9200",
     "port": 9200,
     "check": {
-      "name": "Port 9200 http check",
+      "name": "elasticsearch port 9200 http check",
       "interval": "5s",
       "http": "http://localhost:9200/_cluster/health?pretty=true"
     }
@@ -73,7 +73,7 @@ cat << EOF | sudo tee /etc/consul.d/kibana-5601.json
     "id": "kibana-5601",
     "port": 5601,
     "check": {
-      "name": "Port 5601 http check",
+      "name": "kibana port 5601 http check",
       "interval": "5s",
       "http": "http://localhost:5601"
     }
