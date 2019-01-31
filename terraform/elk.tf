@@ -11,20 +11,12 @@ data "template_file" "consul_client_elk" {
   }
 }
 
-data "template_file" "elk_install" {
-  template = "${file("${path.module}/templates/elk.sh.tpl")}"
-
-//  vars {
-//    prom_priv_ip = "${aws_instance.prometheus.private_ip}"
-//  }
-}
-
 data "template_cloudinit_config" "elk_config" {
   part {
     content = "${data.template_file.consul_client_elk.rendered}"
   }
   part {
-    content = "${data.template_file.elk_install.rendered}"
+    content = "${file("${path.module}/templates/elk.sh")}"
   }
 }
 
@@ -40,5 +32,5 @@ resource "aws_instance" "elk" {
     Name = "elk"
   }
   user_data = "${data.template_cloudinit_config.elk_config.rendered}"
-//  depends_on = ["aws_instance.consul_server", "aws_instance.prometheus"]
+  depends_on = ["aws_instance.consul_server"]
 }
