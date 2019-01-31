@@ -7,6 +7,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt -qq update &> /dev/null
 sudo apt install -yqq apt-transport-https ca-certificates curl gnupg2 software-properties-common docker-ce &> /dev/null
 
+
 # Build & run the dummy container
 sudo mkdir /opt/docker
 cd /opt/docker
@@ -14,6 +15,7 @@ sudo wget https://raw.githubusercontent.com/sharonnavon/project/master/terraform
 sudo wget -O /opt/docker/my_dummy_exporter.py https://raw.githubusercontent.com/sharonnavon/project/master/terraform/templates/my_dummy_exporter.py
 sudo docker build -t dummyapp .
 sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py -d -p 65433:65433 dummyapp
+
 
 # Register the dummy app in consul
 cat << EOF | sudo tee /etc/consul.d/dummy-65433.json
@@ -34,6 +36,7 @@ EOF
 
 sudo systemctl reload consul
 
+
 # Build & run the filebeat container
 cat << EOF | sudo tee /opt/docker/filebeat.yml
 filebeat.config:
@@ -52,13 +55,17 @@ filebeat.autodiscover:
 processors:
 - add_cloud_metadata: ~
 
-output.elasticsearch:
-  hosts: ['${elk_priv_ip}:9200']
+#output.elasticsearch:
+#  hosts: ["${elk_priv_ip}:9200"]
+
+output.logstash:
+  hosts: ["${elk_priv_ip}:5044"]
 
 setup.kibana:
   host: "${elk_priv_ip}:5601"
 
 EOF
+
 
 sudo docker run -d \
   --name=filebeat \

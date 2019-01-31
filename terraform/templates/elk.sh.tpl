@@ -11,6 +11,32 @@ sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch logstash kibana
 sudo systemctl start elasticsearch logstash kibana
 
+
+# Configure LogStash
+cat << EOF | sudo tee /etc/logstash/conf.d/demo-metrics-pipeline.conf
+input {
+  beats {
+    port => 5044
+  }
+}
+
+# The filter part of this file is commented out to indicate that it
+# is optional.
+# filter {
+#
+# }
+
+output {
+  elasticsearch {
+    hosts => "localhost:9200"
+    manage_template => false
+    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+  }
+}
+
+EOF
+
+
 # Configure Kibana
 cat << EOF | sudo tee --append /etc/kibana/kibana.yml
 
@@ -21,6 +47,7 @@ elasticsearch.url: "http://localhost:9200"
 EOF
 
 sudo systemctl restart kibana
+
 
 # Register in consul
 cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
