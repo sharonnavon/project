@@ -7,6 +7,7 @@ echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee 
 sudo apt-get -qq update
 sudo apt-get install -y openjdk-8-jre-headless openjdk-8-jdk-headless
 sudo apt-get install -y elasticsearch logstash kibana
+sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch logstash kibana
 sudo systemctl start elasticsearch logstash kibana
 

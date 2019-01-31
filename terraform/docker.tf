@@ -12,13 +12,21 @@ data "template_file" "consul_client_docker" {
   }
 }
 
+data "template_file" "docker_install" {
+  template = "${file("${path.module}/templates/docker.sh.tpl")}"
+
+  vars {
+    elk_priv_ip = "${aws_instance.elk.private_ip}"
+  }
+}
+
 data "template_cloudinit_config" "docker_server_config" {
   count = "${var.docker_servers}"
   part {
     content = "${element(data.template_file.consul_client_docker.*.rendered, count.index)}"
   }
   part {
-    content = "${file("${path.module}/templates/docker.sh")}"
+    content = "${data.template_file.docker_install.rendered}"
   }
 }
 

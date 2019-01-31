@@ -16,7 +16,7 @@ sudo docker build -t dummyapp .
 sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dummy_exporter.py -d -p 65433:65433 dummyapp
 
 # Register the dummy app in consul
-cat << EOF | sudo tee  /etc/consul.d/dummy-65433.json
+cat << EOF | sudo tee /etc/consul.d/dummy-65433.json
 {
   "service": {
     "name": "dummy-65433",
@@ -33,3 +33,37 @@ cat << EOF | sudo tee  /etc/consul.d/dummy-65433.json
 EOF
 
 sudo systemctl reload consul
+
+# Build & run the filebeat container
+cat << EOF | sudo tee /opt/docker/filebeat.yml
+filebeat.config:
+  prospectors:
+    path: /usr/share/filebeat/prospectors.d/*.yml
+    reload.enabled: false
+  modules:
+    path: /usr/share/filebeat/modules.d/*.yml
+    reload.enabled: false
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      hints.enabled: true
+
+processors:
+- add_cloud_metadata: ~
+
+output.elasticsearch:
+  hosts: ['${elk_priv_ip}:9200']
+
+setup.kibana:
+  host: "${elk_priv_ip}:5601"
+
+EOF
+
+sudo docker run -d \
+  --name=filebeat \
+  --user=root \
+  -v /opt/docker/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro \
+  -v /var/lib/docker/containers:/var/lib/docker/containers:ro \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  docker.elastic.co/beats/filebeat:6.5.4 filebeat -e -strict.perms=false
