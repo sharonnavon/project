@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignore/consul.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/consul.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignore/grafana.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/grafana.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignore/output.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/output.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignore/prometheus.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/prometheus.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/docker.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/docker.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/elk.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/elk.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/templates/elk.sh.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/elk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/templates/docker.sh.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/docker.sh.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/templates/elk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/elk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/templates/grafana.sh.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/grafana.sh.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/templates/prometheus.sh" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/prometheus.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" afterDir="false" />
     </list>
@@ -61,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../git_root/ansible/webserver_setup_git.yml" />
         <option value="$PROJECT_DIR$/ec2.tf" />
         <option value="$PROJECT_DIR$/session3/module_nginx.tf" />
         <option value="$PROJECT_DIR$/session3/variables.tf" />
@@ -101,17 +96,18 @@
         <option value="$PROJECT_DIR$/terraform/dummy_app.tf" />
         <option value="$PROJECT_DIR$/terraform/consul.tf" />
         <option value="$PROJECT_DIR$/terraform/prometheus.tf" />
-        <option value="$PROJECT_DIR$/terraform/templates/grafana.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/grafana.tf" />
-        <option value="$PROJECT_DIR$/terraform/templates/prometheus.sh" />
         <option value="$PROJECT_DIR$/terraform/variables.tf" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/terraform/templates/docker.sh" />
         <option value="$PROJECT_DIR$/terraform/templates/elk.sh.tpl" />
-        <option value="$PROJECT_DIR$/terraform/templates/docker.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/security_groups.tf" />
         <option value="$PROJECT_DIR$/terraform/docker.tf" />
         <option value="$PROJECT_DIR$/terraform/elk.tf" />
+        <option value="$PROJECT_DIR$/terraform/templates/elk.sh" />
+        <option value="$PROJECT_DIR$/terraform/templates/grafana.sh.tpl" />
+        <option value="$PROJECT_DIR$/terraform/templates/prometheus.sh" />
+        <option value="$PROJECT_DIR$/terraform/templates/docker.sh.tpl" />
       </list>
     </option>
   </component>
@@ -200,13 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Preparing mid project">
-      <created>1547469858318</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1547469858318</updated>
     </task>
     <task id="LOCAL-00039" summary="Preparing mid project">
       <created>1547470564781</created>
@@ -544,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548943665300</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Preparing mid project">
+      <created>1548948975991</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1548948975992</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,13 +649,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/grafana.sh" />
-    <entry file="file://$PROJECT_DIR$/terraform/templates/prometheus.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/node_exporter.sh.backup" />
     <entry file="file://$PROJECT_DIR$/gitignore.txt" />
     <entry file="file://$PROJECT_DIR$/terraform/output.tf">
@@ -683,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/grafana.sh.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/my_dummy_exporter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1530">
@@ -703,20 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="78" column="39" lean-forward="true" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/elk.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/docker.sh.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
@@ -752,6 +720,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/grafana.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2985">
+          <caret line="199" column="24" selection-start-line="199" selection-start-column="24" selection-end-line="199" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/elk.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/prometheus.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/docker.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
