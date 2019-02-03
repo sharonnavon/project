@@ -271,4 +271,23 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Dashboard.json
 EOF
 
 sudo systemctl restart grafana-server.service
+
+
+# Register in consul
+cat << EOF | sudo tee /etc/consul.d/grafana-3000.json
+{
+  "service": {
+    "name": "grafana-3000",
+    "id": "grafana-3000",
+    "port": 3000,
+    "check": {
+      "name": "grafana port 3000 http check",
+      "interval": "5s",
+      "http": "http://localhost:3000"
+    }
+  }
+}
+
+EOF
+
 sudo systemctl reload consul
