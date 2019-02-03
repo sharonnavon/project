@@ -270,4 +270,5 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Dashboard.json
 
 EOF
 
+sudo systemctl restart grafana-server.service
 sudo systemctl reload consul
