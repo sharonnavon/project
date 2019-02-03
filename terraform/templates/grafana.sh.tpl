@@ -39,7 +39,7 @@ providers:
 EOF
 
 sudo mkdir /var/lib/grafana/dashboards
-cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.json
+cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Dashboard.json
 {
   "annotations": {
     "list": [
@@ -57,7 +57,6 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.j
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
   "links": [],
   "panels": [
     {
@@ -71,6 +70,90 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.j
         "w": 24,
         "x": 0,
         "y": 0
+      },
+      "id": 4,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "null",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "rate(DummyService_errors[2m])",
+          "format": "time_series",
+          "hide": false,
+          "intervalFactor": 1,
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Number of errors per sec",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 1,
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 10
       },
       "id": 2,
       "legend": {
@@ -106,7 +189,7 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.j
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "# of requests per sec",
+      "title": "Number of requests per sec",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -180,28 +263,9 @@ cat << EOF | sudo tee /var/lib/grafana/dashboards/Dummy_Exporter_Request_Count.j
     ]
   },
   "timezone": "",
-  "title": "Dummy Exporter Request Count",
+  "title": "Dummy Exporter Dashboard",
   "uid": "MX74Y8Qik",
-  "version": 2
-}
-
-EOF
-
-sudo systemctl restart grafana-server
-
-# Register Grafana in consul
-cat << EOF | sudo tee  /etc/consul.d/grafana-3000.json
-{
-  "service": {
-    "name": "grafana-3000",
-    "id": "grafana-3000",
-    "port": 3000,
-    "check": {
-      "name": "grafana port 3000 http check",
-      "interval": "5s",
-      "http": "http://localhost:3000"
-    }
-  }
+  "version": 1
 }
 
 EOF
