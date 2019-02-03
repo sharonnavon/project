@@ -12,6 +12,15 @@ sudo systemctl enable elasticsearch logstash kibana
 sudo systemctl start elasticsearch logstash kibana
 
 
+# Configure Elasticsearch
+cat << EOF | sudo tee --append /etc/elasticsearch/elasticsearch.yml
+
+network.host: 0.0.0.0
+http.port: 9200
+
+EOF
+
+
 # Configure LogStash
 cat << EOF | sudo tee /etc/logstash/conf.d/demo-metrics-pipeline.conf
 input {
