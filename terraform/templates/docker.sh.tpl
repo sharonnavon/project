@@ -18,11 +18,11 @@ sudo docker run --name=dummyapp -v /opt/docker/my_dummy_exporter.py:/tmp/my_dumm
 
 
 # Register the dummy app in consul
-cat << EOF | sudo tee /etc/consul.d/dummy-65433.json
+cat << EOF | sudo tee /etc/consul.d/dummy-app.json
 {
   "service": {
-    "name": "dummy-65433",
-    "id": "dummy-65433",
+    "name": "dummy-app",
+    "id": "dummy-app",
     "port": 65433,
     "check": {
       "name": "dummy_app port 65433 http check",
@@ -59,10 +59,12 @@ processors:
 #  hosts: ["${elk_priv_ip}:9200"]
 
 output.logstash:
-  hosts: ["${elk_priv_ip}:5044"]
+   hosts: ["logstash.service.consul:5044"]
+#  hosts: ["${elk_priv_ip}:5044"]
 
 setup.kibana:
-  host: "${elk_priv_ip}:5601"
+   host: "kibana.service.consul:5601"
+#  host: "${elk_priv_ip}:5601"
 
 EOF
 

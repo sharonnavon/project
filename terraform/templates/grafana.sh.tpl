@@ -18,7 +18,8 @@ datasources:
    type: prometheus
    access: proxy
    orgId: 1
-   url: http://${prom_priv_ip}:9090
+   url: http://prometheus.service.consul:9090
+#   url: http://${prom_priv_ip}:9090
    isDefault: true
    version: 1
 editable: false
@@ -274,11 +275,11 @@ sudo systemctl restart grafana-server.service
 
 
 # Register in consul
-cat << EOF | sudo tee /etc/consul.d/grafana-3000.json
+cat << EOF | sudo tee /etc/consul.d/grafana.json
 {
   "service": {
-    "name": "grafana-3000",
-    "id": "grafana-3000",
+    "name": "grafana",
+    "id": "grafana",
     "port": 3000,
     "check": {
       "name": "grafana port 3000 http check",

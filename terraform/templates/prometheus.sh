@@ -15,11 +15,11 @@ EOF
 sudo systemctl restart prometheus
 
 # Register Prometheus in consul
-cat << EOF | sudo tee  /etc/consul.d/prometheus-9090.json
+cat << EOF | sudo tee  /etc/consul.d/prometheus.json
 {
   "service": {
-    "name": "prometheus-9090",
-    "id": "prometheus-9090",
+    "name": "prometheus",
+    "id": "prometheus",
     "port": 9090,
     "check": {
       "name": "prometheus port 9090 http check",

@@ -59,11 +59,11 @@ sudo systemctl restart kibana
 
 
 # Register in consul
-cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
+cat << EOF | sudo tee /etc/consul.d/elasticsearch.json
 {
   "service": {
-    "name": "elasticsearch-9200",
-    "id": "elasticsearch-9200",
+    "name": "elasticsearch",
+    "id": "elasticsearch",
     "port": 9200,
     "check": {
       "name": "elasticsearch port 9200 http check",
@@ -75,11 +75,11 @@ cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
 
 EOF
 
-cat << EOF | sudo tee /etc/consul.d/logstash-5044.json
+cat << EOF | sudo tee /etc/consul.d/logstash.json
 {
   "service": {
-    "name": "logstash-5044",
-    "id": "logstash-5044",
+    "name": "logstash",
+    "id": "logstash",
     "port": 5044,
     "check": {
       "name": "logstash port 5044 tcp check",
@@ -91,11 +91,11 @@ cat << EOF | sudo tee /etc/consul.d/logstash-5044.json
 
 EOF
 
-cat << EOF | sudo tee /etc/consul.d/kibana-5601.json
+cat << EOF | sudo tee /etc/consul.d/kibana.json
 {
   "service": {
-    "name": "kibana-5601",
-    "id": "kibana-5601",
+    "name": "kibana",
+    "id": "kibana",
     "port": 5601,
     "check": {
       "name": "kibana port 5601 http check",
