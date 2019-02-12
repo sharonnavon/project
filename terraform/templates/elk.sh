@@ -75,6 +75,22 @@ cat << EOF | sudo tee /etc/consul.d/elasticsearch-9200.json
 
 EOF
 
+cat << EOF | sudo tee /etc/consul.d/logstash-5044.json
+{
+  "service": {
+    "name": "logstash-5044",
+    "id": "logstash-5044",
+    "port": 5044,
+    "check": {
+      "name": "logstash port 5044 tcp check",
+      "interval": "5s",
+      "TCP": "localhost:5044"
+    }
+  }
+}
+
+EOF
+
 cat << EOF | sudo tee /etc/consul.d/kibana-5601.json
 {
   "service": {

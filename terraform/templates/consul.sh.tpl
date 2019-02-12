@@ -66,3 +66,14 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable consul.service
 sudo systemctl start consul.service
+
+
+# Install & configure DNS for consul resolution
+sudo apt-get install -y dnsmasq
+cat << EOF | sudo tee /etc/dnsmasq.d/10-consul
+# Enable forward lookup of the 'consul' domain:
+server=/consul/127.0.0.1#8600
+
+EOF
+
+sudo systemctl restart dnsmasq
