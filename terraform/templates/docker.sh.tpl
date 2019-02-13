@@ -72,7 +72,7 @@ EOF
 sudo docker run -d \
   --name=filebeat \
   --user=root \
-  -v /opt/docker/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro \
+  -v /opt/docker/filebeat.yml:/usr/share/filebeat/filebeat.yml \
   -v /var/lib/docker/containers:/var/lib/docker/containers:ro \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   docker.elastic.co/beats/filebeat:6.5.4 filebeat -e -strict.perms=false
