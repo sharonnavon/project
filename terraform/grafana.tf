@@ -13,10 +13,6 @@ data "template_file" "consul_client_grafana" {
 
 data "template_file" "grafana_install" {
   template = "${file("${path.module}/templates/grafana.sh.tpl")}"
-
-  vars {
-    prom_priv_ip = "${aws_instance.prometheus.private_ip}"
-  }
 }
 
 data "template_cloudinit_config" "grafana_config" {

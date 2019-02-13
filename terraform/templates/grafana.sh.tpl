@@ -19,7 +19,6 @@ datasources:
    access: proxy
    orgId: 1
    url: http://prometheus.service.consul:9090
-#   url: http://${prom_priv_ip}:9090
    isDefault: true
    version: 1
 editable: false
