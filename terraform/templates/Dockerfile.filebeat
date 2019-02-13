@@ -1,4 +1,0 @@
-FROM docker.elastic.co/beats/filebeat:6.5.4
-RUN yum install -y dnsmasq
-CMD /bin/echo "server=/consul/127.0.0.1#8600" > /etc/dnsmasq.d/10-consul
-RUN service dnsmasq restart
