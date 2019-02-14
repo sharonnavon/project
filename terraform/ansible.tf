@@ -28,6 +28,6 @@ resource "aws_instance" "ansible" {
     destination = "/home/ubuntu/.ssh/aws_ec2.pem"
   }
 
-  user_data = "${element(data.template_file.ansible.rendered)}"
-  depends_on = ["aws_instance.*"]
+  user_data = "${data.template_file.ansible.rendered}"
+  depends_on = ["aws_instance.prometheus"]
 }
