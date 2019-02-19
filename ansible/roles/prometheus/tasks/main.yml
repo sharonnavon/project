@@ -10,3 +10,4 @@
 
   notify:
     - restart prometheus service
+  
