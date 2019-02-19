@@ -28,6 +28,11 @@ resource "aws_instance" "ansible" {
     destination = "/home/ubuntu/.ssh/aws_ec2.pem"
   }
 
+  provisioner "file" {
+    source = "/home/osboxes/.aws/credentials"
+    destination = "/home/ubuntu/.aws/credentials"
+  }
+
   user_data = "${data.template_file.ansible.rendered}"
 //  depends_on = ["aws_instance.prometheus"]
 }

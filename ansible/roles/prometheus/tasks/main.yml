@@ -1,0 +1,12 @@
+---
+- name: Install prometheus package
+  apt: name=prometheus state=present update_cache=yes
+
+- name: Copy prometheus config file
+  copy:
+    src: prometheus.yml
+    dest: /etc/prometheus/prometheus.yml
+    force: yes
+
+  notify:
+    - restart prometheus service
