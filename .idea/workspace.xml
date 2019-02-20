@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d5b1b45-b2aa-44e1-a546-69680a74ca21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/site.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/ansible.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/ansible.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
@@ -19,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="480">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -31,8 +32,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../project_ansible/ansible.tf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -46,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../project_ansible/files/inventory">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -93,7 +103,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../project_ansible" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -146,8 +156,8 @@
         <option value="$PROJECT_DIR$/terraform/templates/ansible.sh" />
         <option value="$PROJECT_DIR$/terraform/templates/inventory" />
         <option value="$PROJECT_DIR$/terraform/variables.tf" />
-        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/instances.tf" />
+        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/ansible.tf" />
       </list>
     </option>
@@ -174,28 +184,39 @@
             <path>
               <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="terraform" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ansible" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ansible" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="roles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ansible" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="roles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="prometheus" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="ansible" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="roles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="prometheus" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vars" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="terraform" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name=".ignore" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="terraform" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/git_root/project_ansible" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/git_root/project_ansible" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="files" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -317,20 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Preparing mid project">
-      <created>1548338226125</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1548338226126</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Preparing mid project">
-      <created>1548338508406</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1548338508406</updated>
     </task>
     <task id="LOCAL-00060" summary="Preparing mid project">
       <created>1548339373215</created>
@@ -661,13 +668,28 @@
       <option name="project" value="LOCAL" />
       <updated>1550412981286</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Preparing final project">
+      <created>1550590739512</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1550590739512</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Preparing final project">
+      <created>1550591204322</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1550591204322</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
       <window_info id="Structure" order="1" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Favorites" order="2" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Project Explorer" order="3" weight="0.32940447" />
@@ -681,7 +703,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4987593" visible="true" weight="0.22474748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4987593" visible="true" weight="0.22474748" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012407" side_tool="true" weight="0.31060606" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32954547" />
@@ -725,9 +747,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Preparing final project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/terraform/network.tf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/my_dummy_exporter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1530">
@@ -955,13 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../project_ansible/ansible.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/prometheus.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -969,17 +981,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/prometheus/vars/main.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
+    <entry file="file://$PROJECT_DIR$/../project_ansible/ansible.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="510">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -987,6 +995,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

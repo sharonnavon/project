@@ -10,7 +10,16 @@ sudo sed -i '12istdout_callback = debug' /etc/ansible/ansible.cfg
 cd /tmp
 git clone https://github.com/sharonnavon/project.git
 
-cat << EOF | sudo tee /home/ubuntu/inventory
-prometheus ansible_host=${prometheus_priv_ip}
+#cat << EOF | sudo tee /home/ubuntu/inventory
+#prometheus ansible_host=${prometheus_priv_ip}
+#
+#EOF
 
-EOF
+
+sudo apt-get install -y python-pip
+sudo pip install boto
+sudo wget -O /etc/ansible/hosts https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.py
+sudo chmod +x /etc/ansible/hosts
+sudo wget -O /etc/ansible/ec2.ini https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini
+sudo sed -i 's/vpc_destination_variable = ip_address/vpc_destination_variable = private_ip_address/g' /etc/ansible/ec2.ini
+sudo sed -i 's/regions = all/regions = us-east-1/g' /etc/ansible/ec2.ini

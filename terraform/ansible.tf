@@ -29,8 +29,8 @@ resource "aws_instance" "ansible" {
   }
 
   provisioner "file" {
-    source = "/home/osboxes/.aws/credentials"
-    destination = "/home/ubuntu/.aws/credentials"
+    source = "/home/osboxes/.aws"
+    destination = "/home/ubuntu"
   }
 
   user_data = "${data.template_file.ansible.rendered}"
