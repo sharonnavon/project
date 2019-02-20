@@ -1,9 +1,5 @@
 data "template_file" "ansible" {
   template = "${file("${path.module}/templates/ansible.sh.tpl")}"
-
-  vars {
-    prometheus_priv_ip = "${aws_instance.prometheus.private_ip}"
-  }
 }
 
 resource "aws_instance" "ansible" {
