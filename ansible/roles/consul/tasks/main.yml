@@ -26,7 +26,7 @@
 
 - name: Create consul user
   user: name=consul
-
+  apt: name=unzip state=present update_cache=yes
 - name: Grant ownership of folders
   file:
     path: "{{ item }}"
@@ -49,4 +49,14 @@
 
   notify:
     - restart consul service
-  
+
+- name: Install dnsmasq for consul resolution
+  apt: name=dnsmasq state=present update_cache=yes
+
+- name: Configure dnsmasq for consul resolution
+  copy:
+    src: 10-consul
+    dest: /etc/dnsmasq.d/10-consul
+
+  notify:
+    - restart dnsmasq service
