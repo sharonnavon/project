@@ -14,7 +14,7 @@ sudo wget -O /etc/ansible/ec2.ini https://raw.githubusercontent.com/ansible/ansi
 sudo sed -i 's/regions = all/regions = us-east-1/g' /etc/ansible/ec2.ini
 sudo sed -i 's/vpc_destination_variable = ip_address/vpc_destination_variable = private_ip_address/g' /etc/ansible/ec2.ini
 
-cd /tmp
-git clone https://github.com/sharonnavon/project.git
+cd /opt
+sudo git clone https://github.com/sharonnavon/project.git
 
-#ansible-playbook /tmp/project/ansible/site.yml
+#sudo ansible-playbook /opt/project/ansible/site.yml

@@ -24,6 +24,19 @@
     src: consul_client_config.j2
     dest: /etc/consul.d/config.json
 
+- name: Create consul user
+  user: name=consul
+
+- name: Grant ownership of folders
+  file:
+    path: "{{ item }}"
+    owner: consul
+    group: consul
+  with_items:
+  - /opt/consul
+  - /etc/consul.d
+  - /run/consul
+
 - name: Configure consul service
   copy:
     src: consul.service
@@ -31,6 +44,9 @@
 
 - name: Generate service config file
   copy:
-    src: consul_prometheus.json
-    dest: /etc/consul.d/prometheus.json
-    when: {{ instance_name }} == "prometheus"
+    src: consul_{{ instance_name }}.json
+    dest: /etc/consul.d/{{ instance_name }}.json
+
+  notify:
+    - restart consul service
+  
