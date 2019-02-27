@@ -11,9 +11,13 @@
     mode: 0555
 
 - name: Create consul directories
-  file: path=/opt/consul state=directory
-  file: path=/etc/consul.d state=directory
-  file: path=/run/consul state=directory
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+  - /opt/consul
+  - /etc/consul.d
+  - /run/consul
 
 - name: Generate config file
   template:
