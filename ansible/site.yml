@@ -1,5 +1,15 @@
 ---
+- hosts: localhost
+  remote_user: ubuntu
+  become: yes
+  vars:
+    instance_name: prometheus
+
+  - name: Get private IP
+    include_tasks: get_priv_ip.yml
+    
 - hosts: tag_Name_prometheus
   become: yes
   roles:
     - prometheus
+ #   - consul_client

@@ -1,7 +1,3 @@
-#!/bin/bash
-
-# Register Prometheus in consul
-cat << EOF | sudo tee  /etc/consul.d/prometheus.json
 {
   "service": {
     "name": "prometheus",
@@ -14,7 +10,3 @@ cat << EOF | sudo tee  /etc/consul.d/prometheus.json
     }
   }
 }
-
-EOF
-
-sudo systemctl reload consul
