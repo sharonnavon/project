@@ -19,14 +19,24 @@
   - /etc/consul.d
   - /run/consul
 
+- name: Choose agent config file for client
+  set_fact:
+    consul_config_file: consul_client_config.j2
+  when: consul_type == "consul_client"
+
+- name: Choose agent config file for server
+  set_fact:
+    consul_config_file: consul_server_config.j2
+  when: consul_type == "consul_server"
+
 - name: Generate agent config file
   template:
-    src: consul_client_config.j2
+    src: "{{ consul_config_file }}"
     dest: /etc/consul.d/config.json
 
 - name: Create consul user
   user: name=consul
-  apt: name=unzip state=present update_cache=yes
+
 - name: Grant ownership of folders
   file:
     path: "{{ item }}"
