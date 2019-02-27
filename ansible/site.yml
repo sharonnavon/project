@@ -20,7 +20,7 @@
   become: yes
   vars:
     instance_name: prometheus
-    priv_ip: "{{ hostvars.localhost.priv_ip }}"
+    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
 
   roles:
     - prometheus

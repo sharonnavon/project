@@ -2,7 +2,9 @@
 
 sudo sed -i 's/us-east-1.ec2.//g' /etc/apt/sources.list
 sudo apt-get -qq update
-sudo apt-get install -yqq ansible python-pip
+sudo apt-get install -yqq software-properties-common python-pip
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt-get install -yqq ansible
 sudo pip install boto
 sudo chmod 400 /home/ubuntu/.ssh/aws_ec2.pem
 sudo sed -i '11ihost_key_checking = False' /etc/ansible/ansible.cfg

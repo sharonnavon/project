@@ -6,21 +6,9 @@
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/terraform-provider-aws_v1.54.0_x4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/get_priv_ip.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/group_vars/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/group_vars/all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/defaults/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/handlers/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/meta/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/tasks/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/templates/consul_client_config.j2" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/consul/templates/consul_client_config.j2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_client/vars/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/defaults/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/handlers/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/meta/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/tasks/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/templates/consul_server_config.j2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul_server/vars/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/roles/consul/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/consul/tasks/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/site.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" afterDir="false" />
@@ -51,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -60,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terraform/templates/prometheus.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="231">
+              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -69,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/terraform/templates/consul.sh.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="186">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -168,8 +156,8 @@
         <option value="$PROJECT_DIR$/terraform/ansible.tf" />
         <option value="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/terraform/templates/prometheus.sh" />
-        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
         <option value="$PROJECT_DIR$/ansible/roles/consul_client/files/consul_client_config.j2" />
+        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
       </list>
     </option>
   </component>
@@ -185,6 +173,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="terraform" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -219,17 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="terraform" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,19 +226,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ansible/roles/consul/templates" />
-      <recent name="$PROJECT_DIR$/ansible" />
-      <recent name="$PROJECT_DIR$/ansible/roles/consul_client/templates" />
-      <recent name="$PROJECT_DIR$/ansible/roles/consul_server/templates" />
-      <recent name="$PROJECT_DIR$/terraform/.ignore" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/terraform/templates" />
       <recent name="$PROJECT_DIR$/terraform" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ansible/roles/consul/files" />
+      <recent name="$PROJECT_DIR$/ansible/roles/consul/templates" />
+      <recent name="$PROJECT_DIR$/ansible" />
+      <recent name="$PROJECT_DIR$/ansible/roles/consul_client/templates" />
+      <recent name="$PROJECT_DIR$/ansible/roles/consul_server/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,20 +323,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Preparing mid project">
-      <created>1548583438134</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1548583438134</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Preparing mid project">
-      <created>1548593402531</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1548593402531</updated>
     </task>
     <task id="LOCAL-00068" summary="Preparing mid project">
       <created>1548594429343</created>
@@ -679,14 +653,28 @@
       <option name="project" value="LOCAL" />
       <updated>1551276057618</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Preparing final project">
+      <created>1551278496970</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1551278496979</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Preparing final project">
+      <created>1551285165068</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1551285165068</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="27" width="1635" height="928" extended-state="6" />
+    <frame x="45" y="27" width="1315" height="646" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.20588236" />
       <window_info id="Structure" order="1" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Favorites" order="2" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Project Explorer" order="3" weight="0.32940447" />
@@ -700,7 +688,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.22348484" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.34705883" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50310177" side_tool="true" weight="0.22348484" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32954547" />
@@ -888,9 +876,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_server/templates/consul_server_config.j2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_server/templates/consul_server_config.j2" />
     <entry file="file://$PROJECT_DIR$/ansible/roles/consul/templates/consul_client_config.j2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -898,26 +884,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_client/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_client/vars/main.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_client/tasks/main.yml" />
+    <entry file="file://$PROJECT_DIR$/ansible/roles/consul_client/vars/main.yml" />
     <entry file="file://$PROJECT_DIR$/terraform/.ignore/consul.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -939,17 +907,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/prometheus.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="231">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/consul.sh.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="186">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
