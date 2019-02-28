@@ -6,7 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="terraform" />
     <orderEntry type="module" module-name="terraform" />
-    <orderEntry type="module" module-name="project_ansible" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />

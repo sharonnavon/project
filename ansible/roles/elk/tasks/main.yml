@@ -42,10 +42,11 @@
 
 - name: Configure Elasticsearch
   lineinfile:
-    dest: /etc/crontab
+    dest: /etc/elasticsearch/elasticsearch.yml
     regexp: ''
     insertafter: EOF
-    line: '\nnetwork.host: 0.0.0.0\nhttp.port: 9200\n'
+    line: 'network.host: 0.0.0.0
+           http.port: 9200'
 
 - name: Copy logstash config file
   copy:
