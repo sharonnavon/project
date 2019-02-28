@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "elasticsearch",
+    "id": "elasticsearch",
+    "port": 9200,
+    "check": {
+      "name": "elasticsearch port 9200 http check",
+      "interval": "5s",
+      "http": "http://localhost:9200/_cluster/health?pretty=true"
+    }
+  }
+}

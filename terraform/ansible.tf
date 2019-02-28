@@ -30,5 +30,5 @@ resource "aws_instance" "ansible" {
   }
 
   user_data = "${data.template_file.ansible.rendered}"
-//  depends_on = ["aws_instance.prometheus"]
+#  depends_on = ["aws_instance.consul", "aws_instance.prometheus", "aws_instance.elk"]
 }

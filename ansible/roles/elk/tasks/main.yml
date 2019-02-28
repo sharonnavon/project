@@ -1,0 +1,55 @@
+---
+- name: add elastic apt repository
+  apt_repository:
+    repo: deb https://artifacts.elastic.co/packages/6.x/apt stable main
+    state: present
+    filename: elastic-6.x
+
+- name: add elasticsearch apt-key
+  apt_key: 
+    url: https://artifacts.elastic.co/GPG-KEY-elasticsearch 
+    state: present
+
+- name: Install java packages
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+  - openjdk-8-jre-headless
+  - openjdk-8-jdk-headless
+
+- name: Install elk packages
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+  - elasticsearch
+  - logstash
+  - kibana
+
+- name: ensure elk is running and enabled
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+    daemon_reload: yes
+  with_items:
+  - elasticsearch
+  - logstash
+  - kibana
+
+- name: Configure Elasticsearch
+  lineinfile:
+    dest: /etc/crontab
+    regexp: ''
+    insertafter: EOF
+    line: '\nnetwork.host: 0.0.0.0\nhttp.port: 9200\n'
+
+- name: Copy logstash config file
+  copy:
+    src: demo-metrics-pipeline.conf
+    dest: /etc/logstash/conf.d/demo-metrics-pipeline.conf
+    force: yes
+

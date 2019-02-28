@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "logstash",
+    "id": "logstash",
+    "port": 5044,
+    "check": {
+      "name": "logstash port 5044 tcp check",
+      "interval": "5s",
+      "TCP": "localhost:5044"
+    }
+  }
+}

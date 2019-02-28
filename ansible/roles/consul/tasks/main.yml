@@ -52,11 +52,21 @@
     src: consul.service
     dest: /etc/systemd/system/consul.service
 
-- name: Generate service config file
+- name: Generate service config file for consul client
   copy:
     src: consul_{{ instance_name }}.json
     dest: /etc/consul.d/{{ instance_name }}.json
-  when: consul_type == "consul_client"
+  when: consul_type == "consul_client" and instance_name != "elk"
+
+- name: Generate service config file for elk consul client
+  copy:
+    src: consul_{{ item }}.json
+    dest: /etc/consul.d/{{ item }}.json
+  with_items:
+  - elasticsearch
+  - logstash
+  - kibana
+  when: consul_type == "consul_client" and instance_name == "elk"
 
   notify:
     - restart consul
