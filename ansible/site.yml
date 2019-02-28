@@ -116,7 +116,7 @@
     - consul
 
 
-### prometheus ###
+### grafana ###
 - hosts: localhost
   become: yes
   vars:
