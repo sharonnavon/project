@@ -12,7 +12,7 @@ resource "aws_instance" "prometheus" {
   user_data = "${file("${path.module}/templates/basic_instance.sh")}"
 }
 
-resource "aws_instance" "consul_server" {
+resource "aws_instance" "consul" {
   count = "${var.consul_servers}"
   ami           = "${var.ami}"
   instance_type = "t2.micro"
@@ -22,7 +22,7 @@ resource "aws_instance" "consul_server" {
   vpc_security_group_ids = ["${aws_security_group.sg_consul.id}"]
 
   tags = {
-    Name = "consul-server${count.index+1}"
+    Name = "consul${count.index+1}"
     consul_server = "true"
   }
 

@@ -29,12 +29,12 @@
     - consul
 
 
-### Deploy consul servers ###
-### consul-server1 ###
+### Deploy consul ###
+### consul1 ###
 - hosts: localhost
   become: yes
   vars:
-    instance_name: consul-server1
+    instance_name: consul1
   tasks:
     - name: Gather EC2 facts
       ec2_remote_facts:
@@ -48,10 +48,10 @@
         msg: "{{ ec2_facts.instances[0].private_ip_address }}"
       register: priv_ip
 
-- hosts: tag_Name_consul-server1
+- hosts: tag_Name_consul1
   become: yes
   vars:
-    instance_name: consul-server1
+    instance_name: consul1
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
@@ -59,11 +59,11 @@
     - consul
 
 
-### consul-server2 ###
+### consul2 ###
 - hosts: localhost
   become: yes
   vars:
-    instance_name: consul-server2
+    instance_name: consul2
   tasks:
     - name: Gather EC2 facts
       ec2_remote_facts:
@@ -77,10 +77,10 @@
         msg: "{{ ec2_facts.instances[0].private_ip_address }}"
       register: priv_ip
 
-- hosts: tag_Name_consul-server2
+- hosts: tag_Name_consul2
   become: yes
   vars:
-    instance_name: consul-server2
+    instance_name: consul2
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
@@ -88,11 +88,11 @@
     - consul
 
 
-### consul-server3 ###
+### consul3 ###
 - hosts: localhost
   become: yes
   vars:
-    instance_name: consul-server3
+    instance_name: consul3
   tasks:
     - name: Gather EC2 facts
       ec2_remote_facts:
@@ -106,10 +106,10 @@
         msg: "{{ ec2_facts.instances[0].private_ip_address }}"
       register: priv_ip
 
-- hosts: tag_Name_consul-server3
+- hosts: tag_Name_consul3
   become: yes
   vars:
-    instance_name: consul-server3
+    instance_name: consul3
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
