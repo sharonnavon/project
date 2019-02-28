@@ -56,9 +56,14 @@
   copy:
     src: consul_{{ instance_name }}.json
     dest: /etc/consul.d/{{ instance_name }}.json
+  when: consul_type == "consul_client"
 
   notify:
-    - restart consul service
+    - restart consul
+
+- name: ensure consul is running and enabled
+  service: name=consul state=started enabled=yes
+
 
 - name: Install dnsmasq for consul resolution
   apt: name=dnsmasq state=present update_cache=yes
@@ -69,4 +74,7 @@
     dest: /etc/dnsmasq.d/10-consul
 
   notify:
-    - restart dnsmasq service
+    - restart dnsmasq
+
+- name: ensure dnsmasq is running and enabled
+  service: name=dnsmasq state=started enabled=yes

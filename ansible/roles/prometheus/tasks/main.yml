@@ -9,5 +9,8 @@
     force: yes
 
   notify:
-    - restart prometheus service
+    - restart prometheus
+
+- name: ensure prometheus is running and enabled
+  service: name=prometheus state=started enabled=yes
   

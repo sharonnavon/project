@@ -1,3 +1,3 @@
 ---
-- name: restart prometheus service
-  service: name=prometheus state=restarted
+- name: restart prometheus
+  systemd: name=prometheus state=restarted
