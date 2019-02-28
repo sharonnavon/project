@@ -6,12 +6,6 @@
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/terraform-provider-aws_v1.54.0_x4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul/handlers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/consul/handlers/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/consul/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/consul/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/prometheus/handlers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/prometheus/handlers/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible/roles/prometheus/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/prometheus/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" afterDir="false" />
@@ -34,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -139,10 +133,10 @@
         <option value="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/terraform/templates/prometheus.sh" />
         <option value="$PROJECT_DIR$/ansible/roles/consul_client/files/consul_client_config.j2" />
-        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/templates/consul.sh.tpl" />
         <option value="$PROJECT_DIR$/terraform/.ignore/consul.tf" />
         <option value="$PROJECT_DIR$/terraform/instances.tf" />
+        <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
       </list>
     </option>
   </component>
@@ -302,20 +296,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Preparing mid project">
-      <created>1548756926347</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1548756926347</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Preparing mid project">
-      <created>1548757063852</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1548757063852</updated>
     </task>
     <task id="LOCAL-00076" summary="Preparing mid project">
       <created>1548757343342</created>
@@ -646,14 +626,28 @@
       <option name="project" value="LOCAL" />
       <updated>1551346188708</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Preparing final project">
+      <created>1551357647570</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1551357647570</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Preparing final project">
+      <created>1551361595328</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1551361595328</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
       <window_info id="Structure" order="1" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Favorites" order="2" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Project Explorer" order="3" weight="0.32940447" />
@@ -667,7 +661,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.22348484" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.22348484" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50310177" side_tool="true" weight="0.22348484" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32954547" />
@@ -797,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/grafana.sh.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../project_ansible/templates/ansible.sh" />
     <entry file="file://$PROJECT_DIR$/../project_ansible/main.yml" />
     <entry file="file://$PROJECT_DIR$/../project_ansible/instances.tf" />
@@ -839,9 +826,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/terraform/vpc.tf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project_ansible/ansible/site.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/site.yml">
@@ -899,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/instances.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -913,10 +890,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../project_ansible/ansible/site.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/grafana.sh.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="293" lean-forward="true" selection-start-line="293" selection-end-line="293" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/instances.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
