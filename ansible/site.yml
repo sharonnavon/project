@@ -29,7 +29,8 @@
     - consul
 
 
-### Deploy consul server ###
+### Deploy consul servers ###
+### consul-server1 ###
 - hosts: localhost
   become: yes
   vars:
@@ -56,3 +57,62 @@
 
   roles:
     - consul
+
+
+### consul-server2 ###
+- hosts: localhost
+  become: yes
+  vars:
+    instance_name: consul-server2
+  tasks:
+    - name: Gather EC2 facts
+      ec2_remote_facts:
+        region: "{{ region }}"
+        filters:
+          "tag:Name": "{{ instance_name }}"
+      register: ec2_facts
+
+    - name: Get private IP
+      debug:
+        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
+      register: priv_ip
+
+- hosts: tag_Name_consul-server2
+  become: yes
+  vars:
+    instance_name: consul-server2
+    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
+    consul_type: consul_server
+
+  roles:
+    - consul
+
+
+### consul-server3 ###
+- hosts: localhost
+  become: yes
+  vars:
+    instance_name: consul-server3
+  tasks:
+    - name: Gather EC2 facts
+      ec2_remote_facts:
+        region: "{{ region }}"
+        filters:
+          "tag:Name": "{{ instance_name }}"
+      register: ec2_facts
+
+    - name: Get private IP
+      debug:
+        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
+      register: priv_ip
+
+- hosts: tag_Name_consul-server3
+  become: yes
+  vars:
+    instance_name: consul-server3
+    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
+    consul_type: consul_server
+
+  roles:
+    - consul
+
