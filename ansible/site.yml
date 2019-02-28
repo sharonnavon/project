@@ -1,35 +1,4 @@
 ---
-### Deploy prometheus ###
-- hosts: localhost
-  become: yes
-  vars:
-    instance_name: prometheus
-  tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
-
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_prometheus
-  become: yes
-  vars:
-    instance_name: prometheus
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
-    consul_type: consul_client
-
-  roles:
-    - prometheus
-    - consul
-
-
-### Deploy consul ###
 ### consul1 ###
 - hosts: localhost
   become: yes
@@ -114,5 +83,65 @@
     consul_type: consul_server
 
   roles:
+    - consul
+
+
+### prometheus ###
+- hosts: localhost
+  become: yes
+  vars:
+    instance_name: prometheus
+  tasks:
+    - name: Gather EC2 facts
+      ec2_remote_facts:
+        region: "{{ region }}"
+        filters:
+          "tag:Name": "{{ instance_name }}"
+      register: ec2_facts
+
+    - name: Get private IP
+      debug:
+        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
+      register: priv_ip
+
+- hosts: tag_Name_prometheus
+  become: yes
+  vars:
+    instance_name: prometheus
+    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
+    consul_type: consul_client
+
+  roles:
+    - prometheus
+    - consul
+
+
+### prometheus ###
+- hosts: localhost
+  become: yes
+  vars:
+    instance_name: grafana
+  tasks:
+    - name: Gather EC2 facts
+      ec2_remote_facts:
+        region: "{{ region }}"
+        filters:
+          "tag:Name": "{{ instance_name }}"
+      register: ec2_facts
+
+    - name: Get private IP
+      debug:
+        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
+      register: priv_ip
+
+- hosts: tag_Name_grafana
+  become: yes
+  vars:
+    instance_name: grafana
+    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
+    consul_type: consul_client
+
+  roles:
+    - grafana
     - consul
 

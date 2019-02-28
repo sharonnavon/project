@@ -1,0 +1,58 @@
+---
+- name: add grafana apt repository
+  apt_repository:
+    repo: deb https://packages.grafana.com/oss/deb stable main
+    state: present
+    filename: grafana
+
+- name: add grafana apt-key
+  apt_key: 
+    url: https://packages.grafana.com/gpg.key 
+    state: present
+
+- name: Install grafana package
+  apt: name=grafana state=present update_cache=yes
+
+- name: Enable admin user in grafana.ini
+  replace:
+    path: /etc/grafana/grafana.ini
+    regexp: ';admin_user = admin'
+    replace: 'admin_user = admin'
+    backup: yes
+
+- name: Enable default admin password in grafana.ini
+  replace:
+    path: /etc/grafana/grafana.ini
+    regexp: ';admin_password = admin'
+    replace: 'admin_password = admin'
+    backup: yes
+
+- name: Copy grafana datasource file
+  copy:
+    src: datasource.yml
+    dest: /etc/grafana/provisioning/datasources/datasource.yml
+    force: yes
+
+- name: Copy grafana general dashboards file
+  copy:
+    src: all.yml
+    dest: /etc/grafana/provisioning/dashboards/all.yml
+    force: yes
+
+- name: Create dashboards directory
+  file:
+    path: /var/lib/grafana/dashboards
+    state: directory
+
+- name: Copy Dummy_Exporter_Dashboard file
+  copy:
+    src: Dummy_Exporter_Dashboard.json
+    dest: /var/lib/grafana/dashboards/Dummy_Exporter_Dashboard.json
+    force: yes
+
+  notify:
+    - restart grafana
+
+- name: ensure grafana is running and enabled
+  service: name=grafana-server state=started enabled=yes
+  

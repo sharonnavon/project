@@ -8,6 +8,7 @@ sudo apt-get install -yqq ansible
 sudo pip install boto
 sudo chmod 400 /home/ubuntu/.ssh/aws_ec2.pem
 sudo sed -i '11ihost_key_checking = False' /etc/ansible/ansible.cfg
+sudo sed -i '12ideprecation_warnings = False' /etc/ansible/ansible.cfg
 sudo wget -O /etc/ansible/hosts https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.py
 sudo chmod +x /etc/ansible/hosts
 sudo wget -O /etc/ansible/ec2.ini https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/ec2.ini
