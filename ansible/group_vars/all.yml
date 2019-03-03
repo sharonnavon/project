@@ -2,5 +2,12 @@
 region: us-east-1
 ansible_user: ubuntu
 ansible_ssh_private_key_file: /home/ubuntu/.ssh/aws_ec2.pem
+
+### consul ###
 consul_version: 1.4.0
 consul_config_dir: /etc/systemd/system/consul.d
+
+### k8s ###
+kubeadm_token: "gqv3y0.91c3dhvt24c2s63h"
+k8s_master_ip: "192.168.100.100"
+

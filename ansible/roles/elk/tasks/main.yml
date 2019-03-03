@@ -53,3 +53,12 @@
     src: demo-metrics-pipeline.conf
     dest: /etc/logstash/conf.d/demo-metrics-pipeline.conf
     force: yes
+
+- name: Configure kibana
+  blockinfile:
+    path: /etc/kibana/kibana.yml
+    insertafter: EOF
+    block: |
+      server.name: kibana
+      server.host: "0.0.0.0"
+      elasticsearch.url: "http://localhost:9200"

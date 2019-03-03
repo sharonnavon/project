@@ -1,0 +1,3 @@
+---
+- name: Join K8S with kubeadm
+  shell: kubeadm join --token={{ kubeadm_token }} --discovery-token-unsafe-skip-ca-verification {{ k8s_master_ip }}:6443 

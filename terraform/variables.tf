@@ -34,3 +34,7 @@ variable "consul_servers" {
   description = "The number of consul servers"
   default = 3
 }
+variable "k8s_master_servers" {
+  description = "The number of k8s master servers"
+  default = 1
+}
