@@ -41,16 +41,15 @@
   - kibana
 
 - name: Configure Elasticsearch
-  lineinfile:
-    dest: /etc/elasticsearch/elasticsearch.yml
-    regexp: ''
+  blockinfile:
+    path: /etc/elasticsearch/elasticsearch.yml
     insertafter: EOF
-    line: 'network.host: 0.0.0.0
-           http.port: 9200'
+    block: |
+      network.host: 0.0.0.0
+      http.port: 9200
 
 - name: Copy logstash config file
   copy:
     src: demo-metrics-pipeline.conf
     dest: /etc/logstash/conf.d/demo-metrics-pipeline.conf
     force: yes
-
