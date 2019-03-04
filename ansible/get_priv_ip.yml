@@ -1,0 +1,12 @@
+---
+- name: Gather EC2 facts
+  ec2_remote_facts:
+    region: "{{ region }}"
+    filters:
+      "tag:Name": "{{ instance_name }}"
+  register: ec2_facts
+
+- name: Get private IP
+  debug:
+    msg: "{{ ec2_facts.instances[0].private_ip_address }}"
+  register: priv_ip

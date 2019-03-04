@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/group_vars/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/group_vars/all.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/site.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/ansible.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/ansible.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/iam_roles.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/iam_roles.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/instances.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/instances.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/templates/policies/ec2_elb_r53_ecr.json" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/templates/policies/ec2_elb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" afterDir="false" />
@@ -30,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
@@ -39,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/terraform/templates/ansible.sh.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -53,15 +51,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
               <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terraform/variables.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -110,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/variables.tf" />
         <option value="$PROJECT_DIR$/consul.tf" />
         <option value="$PROJECT_DIR$/prometheus.tf" />
         <option value="$PROJECT_DIR$/dummy_app.tf" />
@@ -161,6 +149,7 @@
         <option value="$PROJECT_DIR$/terraform/ansible.tf" />
         <option value="$PROJECT_DIR$/terraform/instances.tf" />
         <option value="$PROJECT_DIR$/terraform/templates/ansible.sh.tpl" />
+        <option value="$PROJECT_DIR$/terraform/templates/policies/ec2_elb.json" />
       </list>
     </option>
   </component>
@@ -327,20 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Preparing mid project">
-      <created>1548771140343</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1548771140346</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Preparing mid project">
-      <created>1548836196208</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1548836196213</updated>
     </task>
     <task id="LOCAL-00085" summary="Preparing mid project">
       <created>1548940357540</created>
@@ -671,14 +646,28 @@
       <option name="project" value="LOCAL" />
       <updated>1551629313078</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Preparing final project">
+      <created>1551691938705</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1551691938705</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Preparing final project">
+      <created>1551692045472</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1551692045472</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
       <window_info id="Structure" order="1" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Favorites" order="2" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
       <window_info id="Project Explorer" order="3" weight="0.32940447" />
@@ -692,7 +681,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32954547" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.22348484" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49689826" visible="true" weight="0.22348484" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50310177" side_tool="true" weight="0.22348484" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32954547" />
@@ -901,20 +890,6 @@
     <entry file="file://$PROJECT_DIR$/terraform/templates/policies/describe-instances.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/templates/policies/ec2_elb.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/iam_roles.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/templates/docker.sh.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -926,6 +901,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/templates/policies/ec2_elb.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/iam_roles.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -947,13 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terraform/ansible.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>

@@ -4,22 +4,11 @@
   vars:
     instance_name: consul1
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_consul1
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: consul1
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
   roles:
@@ -31,22 +20,11 @@
   vars:
     instance_name: consul2
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_consul2
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: consul2
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
   roles:
@@ -58,22 +36,11 @@
   vars:
     instance_name: consul3
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_consul3
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: consul3
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_server
 
   roles:
@@ -85,22 +52,11 @@
   vars:
     instance_name: prometheus
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_prometheus
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: prometheus
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_client
 
   roles:
@@ -113,49 +69,28 @@
   vars:
     instance_name: grafana
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_grafana
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: grafana
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_client
 
   roles:
     - grafana
     - consul
 
+
 ### elk ###
 - hosts: localhost
   vars:
     instance_name: elk
   tasks:
-    - name: Gather EC2 facts
-      ec2_remote_facts:
-        region: "{{ region }}"
-        filters:
-          "tag:Name": "{{ instance_name }}"
-      register: ec2_facts
+    - include: get_priv_ip.yml
 
-    - name: Get private IP
-      debug:
-        msg: "{{ ec2_facts.instances[0].private_ip_address }}"
-      register: priv_ip
-
-- hosts: tag_Name_elk
+- hosts: "tag_Name_{{ instance_name }}"
   vars:
     instance_name: elk
-    priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
     consul_type: consul_client
 
   roles:
