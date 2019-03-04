@@ -31,7 +31,7 @@ resource "aws_iam_role" "k8s" {
 resource "aws_iam_policy" "k8s" {
   name = "k8s"
   description = "Allows k8s to create ec2, elb and DNS records"
-  policy = "${file("${path.module}/templates/policies/ec2_elb_r53_ecr.json")}"
+  policy = "${file("${path.module}/templates/policies/ec2_elb.json")}"
 }
 
 resource "aws_iam_policy_attachment" "k8s" {

@@ -1,7 +1,6 @@
 ---
 ### consul1 ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: consul1
   tasks:
@@ -18,7 +17,6 @@
       register: priv_ip
 
 - hosts: tag_Name_consul1
-  become: yes
   vars:
     instance_name: consul1
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
@@ -30,7 +28,6 @@
 
 ### consul2 ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: consul2
   tasks:
@@ -47,7 +44,6 @@
       register: priv_ip
 
 - hosts: tag_Name_consul2
-  become: yes
   vars:
     instance_name: consul2
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
@@ -59,7 +55,6 @@
 
 ### consul3 ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: consul3
   tasks:
@@ -76,7 +71,6 @@
       register: priv_ip
 
 - hosts: tag_Name_consul3
-  become: yes
   vars:
     instance_name: consul3
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
@@ -88,7 +82,6 @@
 
 ### prometheus ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: prometheus
   tasks:
@@ -105,7 +98,6 @@
       register: priv_ip
 
 - hosts: tag_Name_prometheus
-  become: yes
   vars:
     instance_name: prometheus
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
@@ -118,7 +110,6 @@
 
 ### grafana ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: grafana
   tasks:
@@ -135,7 +126,6 @@
       register: priv_ip
 
 - hosts: tag_Name_grafana
-  become: yes
   vars:
     instance_name: grafana
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
@@ -147,7 +137,6 @@
 
 ### elk ###
 - hosts: localhost
-  become: yes
   vars:
     instance_name: elk
   tasks:
@@ -164,7 +153,6 @@
       register: priv_ip
 
 - hosts: tag_Name_elk
-  become: yes
   vars:
     instance_name: elk
     priv_ip: "{{ hostvars.localhost.priv_ip['msg'] }}"
