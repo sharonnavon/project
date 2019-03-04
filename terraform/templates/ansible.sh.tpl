@@ -21,3 +21,4 @@ cd /opt
 sudo git clone https://github.com/sharonnavon/project.git
 
 #sudo ansible-playbook /opt/project/ansible/site.yml
+#sudo ansible-playbook -i /opt/project/ansible/kubespray/inventory/k8s_cluster/hosts.ini /opt/project/ansible/kubespray/cluster.yml
