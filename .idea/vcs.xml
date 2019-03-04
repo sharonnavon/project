@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../ansible" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kubespray" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../project_ansible" vcs="Git" />
   </component>
 </project>

@@ -20,4 +20,4 @@ sudo sed -i 's/vpc_destination_variable = ip_address/vpc_destination_variable = 
 cd /opt
 sudo git clone https://github.com/sharonnavon/project.git
 
-sudo ansible-playbook /opt/project/ansible/site.yml
+#sudo ansible-playbook /opt/project/ansible/site.yml

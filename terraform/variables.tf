@@ -38,3 +38,7 @@ variable "k8s_master_servers" {
   description = "The number of k8s master servers"
   default = 1
 }
+variable "k8s_master_nodes" {
+  description = "The number of k8s master nodes"
+  default = 1
+}
