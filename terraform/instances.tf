@@ -60,7 +60,7 @@ resource "aws_instance" "k8smaster" {
   count = "${var.k8s_master_servers}"
   associate_public_ip_address = true
   ami = "${var.ami}"
-  instance_type = "t3.medium"
+  instance_type = "t2.micro"
   subnet_id = "${aws_subnet.public_subnet1.id}"
   vpc_security_group_ids = ["${aws_security_group.sg_default.id}", "${aws_security_group.sg_consul.id}"]
   key_name = "${var.key_name}"
@@ -69,7 +69,7 @@ resource "aws_instance" "k8smaster" {
     Name = "k8smaster${count.index+1}"
   }
 
-    connection {
+  connection {
     user = "${var.instance_username}"
     private_key = "${file(var.private_key_path)}"
   }
@@ -86,7 +86,7 @@ resource "aws_instance" "k8snode" {
   count = "${var.k8s_master_nodes}"
   associate_public_ip_address = true
   ami = "${var.ami}"
-  instance_type = "t3.medium"
+  instance_type = "t2.micro"
   subnet_id = "${aws_subnet.public_subnet1.id}"
   vpc_security_group_ids = ["${aws_security_group.sg_default.id}", "${aws_security_group.sg_consul.id}"]
   key_name = "${var.key_name}"
@@ -95,7 +95,7 @@ resource "aws_instance" "k8snode" {
     Name = "k8snode${count.index+1}"
   }
 
-    connection {
+  connection {
     user = "${var.instance_username}"
     private_key = "${file(var.private_key_path)}"
   }

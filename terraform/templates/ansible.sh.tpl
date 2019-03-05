@@ -19,6 +19,8 @@ sudo sed -i 's/vpc_destination_variable = ip_address/vpc_destination_variable = 
 
 cd /opt
 sudo git clone https://github.com/sharonnavon/project.git
-
 #sudo ansible-playbook /opt/project/ansible/site.yml
-#sudo ansible-playbook -i /opt/project/ansible/kubespray/inventory/k8s_cluster/hosts.ini /opt/project/ansible/kubespray/cluster.yml
+
+# k8s
+sudo pip install -r /opt/project/kubespray/requirements.txt
+#sudo ansible-playbook -i /opt/project/kubespray/inventory/k8s_cluster/hosts.ini /opt/project/kubespray/cluster.yml
