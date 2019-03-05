@@ -125,7 +125,23 @@
 
 - hosts: kube-master
   tasks:
-    - shell: sudo cp /etc/kubernetes/admin.conf $HOME/
-    - shell: sudo chown $(id -u):$(id -g) $HOME/admin.conf
-    - shell: export KUBECONFIG=$HOME/admin.conf
-  
+  - name: Copy admin.conf to home dir
+    copy:
+      remote_src: true
+      src: /etc/kubernetes/admin.conf
+      dest: /home/ubuntu/admin.conf
+      force: yes
+
+    environment:
+      KUBECONFIG: "/home/ubuntu/admin.conf"
+
+  - name: Change ownership on admin.conf
+    file:
+      path: "/home/ubuntu/admin.conf"
+      owner: ubuntu
+      group: ubuntu
+
+  - name: export admin.conf
+    shell: "echo $KUBECONFIG"
+    environment:
+      KUBECONFIG: "/home/ubuntu/admin.conf"
