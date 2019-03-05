@@ -132,9 +132,6 @@
       dest: /home/ubuntu/admin.conf
       force: yes
 
-    environment:
-      KUBECONFIG: "/home/ubuntu/admin.conf"
-
   - name: Change ownership on admin.conf
     file:
       path: "/home/ubuntu/admin.conf"
@@ -142,6 +139,8 @@
       group: ubuntu
 
   - name: export admin.conf
-    shell: "echo $KUBECONFIG"
-    environment:
-      KUBECONFIG: "/home/ubuntu/admin.conf"
+    blockinfile:
+     path: /home/ubuntu/.bashrc
+     insertafter: EOF
+     block: |
+       export KUBECONFIG=/home/ubuntu/admin.conf
