@@ -5,10 +5,7 @@
       <change afterPath="$PROJECT_DIR$/../project_ansible/.idea/project_ansible.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../project_ansible/.terraform/plugins/linux_amd64/terraform-provider-aws_v1.54.0_x4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/instances.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/instances.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubespray/cluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubespray/cluster.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../project_ansible/.idea/project.iml" afterDir="false" />
@@ -48,7 +45,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/terraform/instances.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
+            <state relative-caret-position="698">
               <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
@@ -324,13 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544543072080</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Preparing mid project">
-      <created>1549188308418</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1549188308418</updated>
     </task>
     <task id="LOCAL-00095" summary="Preparing mid project">
       <created>1549188592888</created>
@@ -668,12 +658,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551790957497</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Preparing final project">
+      <created>1551794580891</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1551794580891</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="27" width="1635" height="928" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4981685" visible="true" weight="0.1650124" />
       <window_info id="Structure" order="1" sideWeight="0.50183153" side_tool="true" weight="0.16191067" />
@@ -958,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/terraform/instances.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
+        <state relative-caret-position="698">
           <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
