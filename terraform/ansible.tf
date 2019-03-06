@@ -2,6 +2,28 @@ data "template_file" "ansible" {
   template = "${file("${path.module}/templates/ansible.sh.tpl")}"
 }
 
+data "template_file" "consul_client_ansible" {
+  template = "${file("${path.module}/templates/consul.sh.tpl")}"
+
+  vars {
+    consul_version = "${var.consul_version}"
+    config = <<EOF
+     "node_name": "ansible",
+     "enable_script_checks": true,
+     "server": false
+    EOF
+  }
+}
+
+data "template_cloudinit_config" "ansible_config" {
+  part {
+    content = "${data.template_file.consul_client_ansible.rendered}"
+  }
+  part {
+    content = "${data.template_file.ansible.rendered}"
+  }
+}
+
 resource "aws_instance" "ansible" {
   associate_public_ip_address = true
   ami = "${var.ami}"
@@ -29,6 +51,6 @@ resource "aws_instance" "ansible" {
     destination = "/home/ubuntu"
   }
 
-  user_data = "${data.template_file.ansible.rendered}"
+  user_data = "${data.template_cloudinit_config.ansible_config.rendered}"
 #  depends_on = ["aws_instance.consul", "aws_instance.prometheus", "aws_instance.grafana", "aws_instance.elk"]
 }

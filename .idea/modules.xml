@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/project.iml" filepath="$PROJECT_DIR$/.idea/project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../project_ansible/.idea/terraform.iml" filepath="$PROJECT_DIR$/../project_ansible/.idea/terraform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mid_project/.idea/terraform.iml" filepath="$PROJECT_DIR$/../mid_project/.idea/terraform.iml" />
     </modules>
   </component>
 </project>
