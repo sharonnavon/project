@@ -1,0 +1,27 @@
+---
+- name: Create spree-app deployment
+  k8s:
+    state: present
+    definition:
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: spree-deployment
+        labels:
+          app: spree-app
+      spec:
+        replicas: 3
+        selector:
+          matchLabels:
+            app: spree-app
+        template:
+          metadata:
+            labels:
+              app: spree-app
+          spec:
+            containers:
+            - name: spree-app
+              image: spreecommerce/spree:3.6.4
+              ports:
+              - containerPort: 3000
+      

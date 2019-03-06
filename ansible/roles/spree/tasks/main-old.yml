@@ -1,0 +1,12 @@
+---
+- name: Copy spree-app config
+  copy:
+    src: spree-app.yml
+    dest: /home/ubuntu/spree-app.yml
+
+- name: Copy spree-service config
+  copy:
+    src: spree-service.yml
+    dest: /home/ubuntu/spree-service.yml
+
+- name: Create 

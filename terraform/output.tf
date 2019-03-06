@@ -1,3 +1,6 @@
+output "Ansible" {
+  value = "http://${aws_instance.ansible.public_ip}"
+}
 output "Consul" {
   value = "http://${aws_instance.consul.*.public_ip[0]}:8500"
 }
@@ -13,7 +16,7 @@ output "ElasticSearch" {
 output "Kibana" {
   value = "curl http://${aws_instance.elk.public_ip}:5601/app/infra#/logs"
 }
-output "spree" {
+output "Spree" {
   value = "curl http://${aws_instance.k8smaster.*.public_ip[0]}:30001"
 }
 //output "DummyExporterService1" {

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spree-deployment
+  labels:
+    app: myspree
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myspree
+  template:
+    metadata:
+      labels:
+        app: myspree
+    spec:
+      containers:
+      - name: myspree
+        image: spreecommerce/spree:3.6.4
+        ports:
+        - containerPort: 3000
