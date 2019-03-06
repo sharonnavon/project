@@ -1,19 +1,4 @@
 ---
-- hosts: localhost
-  vars:
-    instance_name: ansible
-  tasks:
-    - include: get_priv_ip.yml
-
-- hosts: "tag_Name_{{ instance_name }}"
-  vars:
-    instance_name: ansible
-    consul_type: consul_client
-
-  roles:
-    - consul
-
-
 ### consul1 ###
 - hosts: localhost
   vars:
