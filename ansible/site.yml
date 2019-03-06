@@ -135,3 +135,18 @@
 #    - k8s_node
     - consul
 
+
+### Spree ###
+- hosts: localhost
+  vars:
+    instance_name: k8smaster1
+  tasks:
+    - include: get_priv_ip.yml
+
+- hosts: "tag_Name_{{ instance_name }}"
+  vars:
+    instance_name: k8smaster1
+    consul_type: consul_client
+
+  roles:
+    - spree
