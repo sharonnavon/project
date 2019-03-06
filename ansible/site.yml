@@ -111,10 +111,10 @@
     consul_type: consul_client
 
   roles:
-    - docker
-    - k8s_common
-    - k8s_master
- #   - consul
+#    - docker
+#    - k8s_common
+#    - k8s_master
+    - consul
 
 
 ### k8snode ###
@@ -130,8 +130,8 @@
     consul_type: consul_client
 
   roles:
-    - docker
-    - k8s_common
-    - k8s_node
- #   - consul
+#    - docker
+#    - k8s_common
+#    - k8s_node
+    - consul
 

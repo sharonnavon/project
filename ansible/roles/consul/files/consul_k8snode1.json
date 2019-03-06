@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "k8snode-ssh",
+    "id": "k8snode-ssh",
+    "port": 22,
+    "check": {
+      "name": "k8snode port 22 tcp check",
+      "interval": "5s",
+      "tcp": "localhost:22"
+    }
+  }
+}

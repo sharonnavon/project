@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "k8smaster-etcd",
+    "id": "k8smaster-etcd",
+    "port": 2379,
+    "check": {
+      "name": "k8smaster-etcd port 2379 http check",
+      "interval": "5s",
+      "http": "http://localhost:2379"
+    }
+  }
+}

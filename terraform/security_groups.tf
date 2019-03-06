@@ -31,6 +31,13 @@ resource "aws_security_group" "sg_default" {
     }
 
     ingress {
+        from_port       = 30001
+        to_port         = 30001
+        protocol        = "tcp"
+        cidr_blocks     = ["0.0.0.0/0"]
+    }
+
+    ingress {
         from_port       = 9100
         to_port         = 9100
         protocol        = "tcp"
