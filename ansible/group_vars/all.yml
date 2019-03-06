@@ -10,5 +10,5 @@ consul_version: 1.4.0
 consul_config_dir: /etc/systemd/system/consul.d
 
 ### k8s ###
-kubeadm_token: "gqv3y0.91c3dhvt24c2s63h"
-k8s_master_ip: "192.168.100.100"
+# kubeadm_token: "gqv3y0.91c3dhvt24c2s63h"
+# k8s_master_ip: "192.168.100.100"

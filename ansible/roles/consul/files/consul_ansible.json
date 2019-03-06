@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "ansible-ssh",
+    "id": "ansible-ssh",
+    "port": 22,
+    "check": {
+      "name": "ansible port 22 tcp check",
+      "interval": "5s",
+      "tcp": "localhost:22"
+    }
+  }
+}

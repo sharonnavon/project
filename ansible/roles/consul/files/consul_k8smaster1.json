@@ -4,9 +4,9 @@
     "id": "k8smaster-etcd",
     "port": 2379,
     "check": {
-      "name": "k8smaster-etcd port 2379 http check",
+      "name": "k8smaster-etcd port 2379 tcp check",
       "interval": "5s",
-      "http": "http://localhost:2379"
+      "tcp": "localhost:2379"
     }
   }
 }
