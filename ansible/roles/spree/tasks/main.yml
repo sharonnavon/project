@@ -1,27 +1,16 @@
 ---
-- name: Create spree-app deployment
-  k8s:
-    state: present
-    definition:
-      apiVersion: apps/v1
-      kind: Deployment
-      metadata:
-        name: spree-deployment
-        labels:
-          app: spree-app
-      spec:
-        replicas: 3
-        selector:
-          matchLabels:
-            app: spree-app
-        template:
-          metadata:
-            labels:
-              app: spree-app
-          spec:
-            containers:
-            - name: spree-app
-              image: spreecommerce/spree:3.6.4
-              ports:
-              - containerPort: 3000
-      
+- name: Copy spree-app config
+  copy:
+    src: spree-app.yml
+    dest: /home/ubuntu/spree-app.yml
+
+- name: Copy spree-service config
+  copy:
+    src: spree-service.yml
+    dest: /home/ubuntu/spree-service.yml
+
+- name: Create spree deployment
+  shell: kubectl create -f /home/ubuntu/spree-app.yml
+
+- name: Create spree service
+  shell: kubectl create -f /home/ubuntu/spree-service.yml
